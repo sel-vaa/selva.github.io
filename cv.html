@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+<!-- Pg Icon -->
+	<link href="images/info.png" rel="shortcut icon" />
+  </head>
+  <body oncontextmenu="return false" onload="checkForUpdate()">
+ 
+  <div id="page1"  style="display:block;" >
+    <div class="login-page">
+      <div class="form">
+        <h2>Login</h2>
+        <form onsubmit="return validatePassword();" id="password-form" class=" login-form">
+       
+          <input type="password" placeholder="Password" id="password-input">
+          <input class="btns" type="submit" value="Submit">
+        </form>
+        <p id="password-error" class="message" style="display:none; font-family: Nunito;">Incorrect password. Please try again.
+
+        <p class="message">PASSWORD is 12345</p>
+      </div>
+    </div>
+  </div>
+
+
+<!--------------------------------------------------------------------------------------------------->
+
+<div id="page2" style="display:none; ">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Selva Profile Website">
+    <meta name="keywords" content="Selva,HTML,CSS,JavaScript,Web developer">
+    <meta name="author" content="Selva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+<!-- Pg Icon -->
+	<link href="images/info.png" rel="shortcut icon" />
+
+<!-- Auto refersh--- <meta http-equiv="refresh" content="120"> -->
+
+<!-- no cache-->
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+<!-- original CSS -->
+    <link rel="stylesheet" href="cv_1.css" >
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- JavaScript -->
+<script src="cv_1.js"></script>
+
+<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Goldman' rel='stylesheet'>
+
+
+<body background=
+"images/dflt.jpg">
+
+<style>
+
+*{
+	font-family: Nunito;
+	font-size:calc(11px + 0.3vw);
+}
+
+#padd{
+	padding: calc(8px + 1.5vw);
+}
+
+body{
+	font-family: Nunito;
+	background-color: #F5F5F5;
+}
+
+.subtopic{
+	font-size:calc(14px + 0.3vw); 
+	font-weight: bold;
+}
+
+.maintopic{
+	font-size:calc(16px + 0.5vw);
+	font-weight: bold;
+	text-align: center;
+}
+
+.bborder{
+	font-family: arial;
+	border-bottom: solid grey;
+	border-bottom-width: 0.5px;
+}
+
+.flt img{
+	position: fixed;
+	bottom:calc(9px + 1vw);
+	right:10%;left:90%;
+	outline: none;
+	border-radius: 100%;
+	box-shadow:3px 3px 2px grey;
+	padding: 2px 2px 2px 2px;
+	background-color: #FFFFFF;
+
+	width: calc(20px + 1.5vw);
+	height: calc(20px + 1.5vw);
+	text-decoration: none;
+}
+
+.fbox{
+	padding: 20px 20px 20px 20px;
+	border: solid 1px;
+	border-color: grey;
+	border-radius: 1%;
+	box-shadow: 5px 5px 10px grey;
+	background-color: #FFFFFF;
+}
+
+
+.mainimg img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 300px;
+	border-radius: 50%;
+	box-shadow:10px 10px 10px grey;
+}
+
+.top h2{
+	font-family:Goldman;
+	font-size: calc(15px + 0.3vw);
+	text-align: center;
+}
+
+.top p{
+	font-size:calc(9px + 0.9vw);
+	border-bottom: solid grey;
+	border-bottom-width: 0.5px;
+}
+
+.top table img{
+	outline: none;
+	border-radius: 100%;
+	padding: 5px 5px 5px 5px;
+	background-color: #FFFFFF;
+
+	width: calc(28px + 0.5vw);
+	height: calc(28px + 0.5vw);
+	text-decoration: none;
+}
+
+.top table a{
+	text-decoration: none;
+	font-size: 100%;
+	padding-left:5px;
+}
+
+.sm{word-spacing: 20px;text-decoration: none;}
+
+.sm img{
+	outline: none;
+	border-radius: 100%;
+	box-shadow:5px 5px 5px grey;
+	padding: 3px 3px 3px 3px;
+	background-color: #FFFFFF;
+	align: center;
+	width: calc(38px + 0.5vw);
+	height: calc(38px + 0.5vw);
+	text-decoration: none;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+
+#fltnav a{
+	display: block;
+	color:white;
+	text-align: center;
+	padding:2px 2px;
+	text-decoration: none;
+}
+
+.tlpimg{
+	width: 50px;height:60px;
+	border-radius: 50%;
+	padding: 5px 5px 5px 5px;
+}
+
+.tltime{
+	color: grey;
+}
+
+.tldis{
+	padding: 8px;
+}
+
+.tlfullimg{
+	box-sizing: border-box; max-width: 100%;
+}
+
+#atlast a{
+	text-decoration: none;
+}
+
+
+</style>
+
+<div id="padd">
+<!---floting button---->
+	<a href="#top" class="flt">
+		<img src="images/up.png" alt="up">
+	</a>
+
+<!---box---->
+<div class="fbox top" style="text-align: center;">
+	<div>
+		<div class="mainimg"><img src="images/selva.jpg" alt="selva image"></div>
+		<br>
+		<h1 style="font-family: Nunito;">SELVA</h1>
+		<div><h2>Oracle Database Developer</h2></div>
+		<p>Hi, Welcome to my website. This is selva. Seeking assignments to utilize my skills for the growth and development of organization and self.<br>&#160</p>
+		
+		<table align="center">
+			<tr><th><img src="images/mail.gif" alt="mail"></th>
+				<th><a align="left" href="mailto:er.ks.selva@gmail.com">er.ks.selva@gmail.com</a></th></tr>
+			<tr><th><img src="images/call.gif" alt="call"></th>
+				<th><a href="tell:7639888606" align="left">8667222698</a></th></tr>
+			<tr><th><img src="images/web.gif" alt="web"></th>
+				<th><a align="left" href="https://bit.ly/selvaa">www.bit.ly/erselvaa</a></th></tr>
+			<tr><th><img src="images/pin.gif" alt="pin"></th>
+				<th><div align="left" style="text-decoration: none;font-size: 100%;padding-left: 5px;">Chennai, Tamilnadu, India</div></th></tr>
+		</table>
+	</div>
+</div>	
+
+<br/>
+
+<!---Fb, twitter, Insta---->
+<div class="sm" class='demopadding' align="center">
+	<a href="https://wa.me/7639888606?text=Hi"><img src="images/wapp1.gif" alt="fb"></a>
+	<a href="https://www.github.com/sel-va"><img src="images/git.gif" alt="github"></a>
+	<a href="https://www.linkedin.com/in/selva-s-b45496135"><img src="images/lkd.gif" alt="linkedin"></a>
+	<a href="https://www.facebook.com/selva.subramanian.10"><img src="images/fb1.gif" alt="fb"></a>
+	<a href="https://www.instagram.com/sel_vaaa_"><img src="images/insta1.gif" alt="insta"></a>
+	
+	 
+</div>
+<br>
+<!---info box---->
+<div class="fbox">	
+	
+	<div>
+		<table align="left;"style="overflow-x:auto;">
+			<tr><th><img style="width: 30px;height: 30px;border-radius: 50%;" src="images/info.png" alt="icon"></th>
+				<th style="vertical-align:center;"><h3 class="subtopic">&#160 INFO &#160</h3></th>
+				<td><button onclick="window.print()" style="outline: none;border-radius: 2%;color: black;padding: 3px 5px;text-align: center;display:inline-block;font-size:80%;text-decoration: none;">Resume Copy</button></td>
+			</tr>
+		</table>
+	</div>
+<div class="ibox">	
+	<div align="left" style="overflow-x:auto;">
+		<table align="left" style="font-size: 100%;" cellpadding="5">
+			<tr><td align="left" style="padding-left: 6px"><strong>2019-Present</strong><br>PLSQL Developer - Cubespace Technologies Pvt Ltd , Bangalore, India.</td>
+			</tr>
+			<tr><td align="left" style="padding-left: 6px"><strong>2017-2018</strong><br>Supplier Quality Inspector at PHA India Pvt Ltd, Chennai, India.</td>
+			</tr>
+			<tr><td align="left" style="padding-left: 6px"><strong>2013-2017</strong><br>Studied BE Mechanical Engineering at Madha Engineering college, Chennai, Tamilnadu, India.<br>First Class of 66.8%</td>
+			</tr>
+			<tr><td align="left" style="padding-left: 6px"><strong>2006-2012</strong><br>Went to N.S.M.V.P.S. Hr. Sec. School, Devakottai, TN, India.<br>HSC - First Class of 75%<br>SSLC - First Class of 87%<br></td>
+			</tr>
+		</table>
+	</div>
+</div>
+	
+	<p class="bborder">&#160</p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">SKLLS</h3>
+	<div><table align="left" style="font-size: 100%;text-align: left;" cellpadding="5">
+		<tr><td class="bold">Database</td><td>-</td><td>Oracle 10g, 11g, and 12c, Basic (MySQL, My access, Mongo DB)</td></tr>
+		<tr><td class="bold">Language</td><td>-</td><td>SQL, PL/SQL, Basic (Javascript, Python, Java)</td></tr>
+		<tr><td class="bold">Operating System</td><td>-</td><td>Windows, Unix , Linux</td></tr>	
+		<tr><td class="bold">Oracle Development Tools</td><td>-</td><td>SQL Developer, Notepad++, SQL * Plus, TOAD</td></tr>
+		<tr><td class="bold" style="vertical-align: top;">Other</td><td style="vertical-align: top;">-</td><td>
+		HTML, CSS, Bootstrap Framework, <br>
+		Git (Version control & SCM), <br>
+		Unix Shell Scripting,<br>
+		Jira (Agile development / Defect tracking / Ticket Tracking ), <br>
+		MS Word, Excel, Powepoint, Photoshop, Figma, <br>
+		Selenium Using Basic Java/Python<br>
+		</td></tr>
+		</table>
+	</div>
+</div>
+
+	<p class="bborder">&#160</p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">STRENGTH</h3>
+	<ul>
+	<li>Problem solving</li>	
+	<li>Willingness to learn - R&D</li>	
+	<li>Team player - Adaptability</li>	
+	<li>Self Confidence - Positive Attitude</li>	
+	</ul>
+</div>
+
+<p class="bborder"></p>
+
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">BASIC INFO</h3>
+	<div><table align="left" style="font-size: 100%;text-align: left;" cellpadding="5">
+		<tr><td class="bold">DOB</td><td>-</td><td>01-07-1995</td></tr>
+		<tr><td class="bold">Age</td><td>-</td><td>27</td></tr>	
+		<tr><td class="bold">Gender</td><td>-</td><td>Male</td></tr>
+		<tr><td class="bold">Birth place</td><td>-</td><td>Devakottai</td></tr>
+		<tr><td class="bold">Religion</td><td>-</td><td>Hindu</td></tr>
+		<tr><td class="bold">Language </td><td>-</td><td>Tamil, English</td></tr>
+		<tr><td class="bold">Relationship</td><td>-</td><td>Single</td></tr>
+		<tr><td class="bold" style="vertical-align: top;">Life goal</td><td style="vertical-align: top;">-</td><td>Afforestation, Travel around the world</td></tr>
+		<tr><td class="bold" style="vertical-align: top;">Hobbies</td><td style="vertical-align: top;">-</td><td>Analysis, Browsing internet to learn new stuff</td></tr>
+		</table>
+</div>
+</div>
+</div>
+<br>
+
+<!---floating nav bar---->
+
+<div style="display: inline; background-color: #4CAF50;" align="left">
+<table id="fltnav" style="width:100%;text-align: justify.stretch;list-style-type: none;margin: 0;padding:0;overflow: hidden;background-color: #333;position: -webkit-sticky;position: sticky;top:0;box-shadow: 5px 5px 20px grey;">
+	<tr><td style="border-right:1px solid #bbb;float: center;"><a href="#ar">PLSQL Developer </a></td><td>
+	<td style="border-right:1px solid #bbb;float: center;"><a href="#pha">Mech Experience</a></td><td>
+	<td style="float: center;"><a href="#Timeline">Timeline</a></td></tr>
+</table>
+</div>
+<br>
+
+
+<!---PLSQL Developer Open---->
+
+<div id="ar" style="overflow-x:auto;">
+	<h3  class="maintopic">CUBESPACE TECHNOLOGIES - PLSQL DEVELOPER - EXPERIENCE PROFILE</h3>
+</div>
+
+<div class="fbox">		
+	<div>
+		<h3 class="subtopic">PROFESSIONAL PROFILE &#160</h3>
+		<ul>Presently with Cubespace Technologies Pvt Ltd as PLSQL DEVELOPER <br> 
+			From 3 JUNE 2019 to Present.<br>
+		</ul>
+	</div>
+
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">PROFESSIONAL SUMMARY </h3>
+	<ul>
+	<li>Oracle PL/SQL developer with <strong>3.8 years</strong>&nbsp;of experience in database development and L1/L2/L3 production support, database migration for Oracle databases.</li>
+	<li>Expertise in Client-Server application development using Oracle&nbsp;<strong>11g/10g/12c, PL/SQL, SQL Developer, SQL *PLUS and TOAD</strong></li>
+	<li>Involved in all phases of the&nbsp;<strong>SDLC (Software Development Life Cycle)&nbsp;</strong>and<strong> STLC (Software Testing Life Cycle)</strong>.</li>
+	<li>Strong experience in creating and modifying database objects such as <strong>Packages, Procedures, Functions, Triggers, Views, Materialized Views, and Sequences.</strong></li>
+	<li>Proficient in using <strong>Ref Cursor, Bulk Collect, Pragma Autonomous Transaction, and Collections.</strong></li>
+	<li>Experience in using <strong>DDL, DML, and TCL</strong> commands.</li>
+	<li>Experience in <strong>Joins, Subqueries, Single row Functions,</strong> <strong>Collections&nbsp;and&nbsp;Exception</strong> Handling.</li>
+	<li><strong>Import </strong>data with Oracle Tables using&nbsp;<strong>SQL Loader.</strong></li>
+	<li><strong>Export </strong>retrieveddata from database as pdf, txt, csv, html, insert query using sql developer<strong>.</strong></li>
+	<li>Expertise in <strong>Troubleshooting database</strong>-related issues and working with other teams to resolve issues in a timely manner.</li>
+	<li>Experience in <strong>Manual Testing</strong> and knowledge about Selenium automation testing using basic Java and Python.</li>
+	<li>Strong experience in <strong>Writing Test Cases, Test Plans, and Test Scripts</strong>, and executing them using manual and automated testing methods.</li>
+	<li>Experience in designing and executing <strong>Unit, Integration, Functional, Regression Testing</strong>.</li>
+	<li>Excellent <strong>Problem-Solving skills</strong> and attention to detail.</li>
+	</ul>
+</div>
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">PLSQL PROJECT EXPERIENCE: </h3>
+	<br>
+	<h2 class="subtopic">PROJECT 1: </h2>
+	<div>
+		<table style="font-size: 100%;">
+			<tr><td style="text-align: right;font-weight: bold;">Project :</td>
+				<td align="left" style="padding-left: 6px">Humana – L1 / L2 / L3 support</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Client :</td>
+				<td align="left" style="padding-left: 6px">Tata Consultancy Services</td>
+			</tr>			
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Duration :</td>
+				<td align="left" style="padding-left: 6px">03-Jun-2019 to 08-Sep-2021</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Domain :</td>
+				<td align="left" style="padding-left: 6px">Healthcare</td>
+			</tr>
+		</table>
+	</div>
+		<br>
+		
+	<h2 class="subtopic">Description </h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Humana Healthcare is a leading healthcare insurance provider in the United States. The company offers a range of health insurance products and services to individuals and organizations, including medical, dental, and vision coverage, as well as wellness programs and health management services. The project involves a team of specialists who troubleshoot and resolve issues, optimize code, and integrate new technologies to ensure that the applications are running smoothly and efficiently.</p>
+	
+	<h2 class="subtopic">Roles &amp; Responsibilities: </h2>
+	<ul>
+	<li>Developing and maintaining PL/SQL code for healthcare member enrolment, provider enrolment, billing, verifying member status, contract status and claim status.</li>
+	<li>Monitor the production environment and perform regular health checks.</li>
+	<li>Troubleshoot issues reported by L1 / L2 / client / users and resolve them in a timely manner.</li>
+	<li>Document the issues, resolutions and process updates to Create &amp; maintain knowledge base for known issues and their resolutions like mini SOP.</li>
+	<li>Collaborating with the front-end team to understand requirements and updating procedures, functions, and packages to validate and load data into target tables based on the current requirement.</li>
+	<li>Creating and modifying tables, views, indexes, sequences, synonyms, materialized views, and constraints to implement business rules.</li>
+	<li>Loading data from flat files into database tables using SQL Loader. If required, the direct path loader can be used, followed by normalization and constraint and index validation.</li>
+	<li>Supporting SIT and UAT testing, fixing interface aborts, and solving tickets within SLA</li>
+	<li>Fixing IRs in production support and coordinating with the team using JIRA.</li>
+	<li>Carrying out impact analysis, preparing root cause analysis, and monitoring activity to exceed clients SLAs in terms of quality and productivity.</li>		
+	</ul>
+</div>
+
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	
+	<h2 class="subtopic">PROJECT 2: </h2>
+	<div>
+		<table style="font-size: 100%;">
+			<tr><td style="text-align: right;font-weight: bold;">Project :</td>
+				<td align="left" style="padding-left: 6px">Baylor Scott and White – Development and Enhancement</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Client :</td>
+				<td align="left" style="padding-left: 6px">Tata Consultancy Services</td>
+			</tr>			
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Duration :</td>
+				<td align="left" style="padding-left: 6px">08-Sep-2021 to 04-Aug-2022</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Domain :</td>
+				<td align="left" style="padding-left: 6px">Healthcare</td>
+			</tr>
+		</table>
+	</div>
+		<br>
+		
+	<h2 class="subtopic">Description </h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Baylor Scott and White is an Oracle PL/SQL database development project that involves creating a website to access claim details, authorization information, eligibility information, and contract details. The website provides a user-friendly interface for managing the data and ensuring that the information is up-to-date and easily accessible. The project involves the use of PL/SQL development and enhancement of database.</p>
+	
+	<h2 class="subtopic">Roles &amp; Responsibilities: </h2>
+	<ul>
+	<li>Developing and enhancing the PL/SQL database for accessing claim details, authorization information, eligibility information, and contract details.</li>
+	<li>Completing development tasks assigned via Jira.</li>
+	<li>Understanding the logical/physical data model and documenting Business Requirements provided by the Business Analyst.</li>
+	<li>Creating an Impact Analysis document to assess the impact of proposed changes.</li>
+	<li>Creating a detailed Design Document outlining the implementation plan.</li>
+	<li>Designing and creating test cases for Unit Testing to ensure the code is thoroughly tested.</li>
+	<li>Performing the coding process and ensuring it meets the design document and coding standards.</li>
+	<li>Conducting Unit Testing and saving the results to validate the code.</li>
+	<li>Maintaining the Coding Documents in git, and updating them with any changes made.</li>
+	<li>Collaborating with the testing team to plan and design test cases for effective testing.</li>
+	<li>Debugging PL/SQL code to identify and fix defects found during testing based on priority and severity, and providing support to testers as needed.</li>
+	<li>Continuously learning and enhancing knowledge of the manual testing process to better support the testing team.</li>	
+	</ul>
+</div>
+
+
+
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	
+	<h2 class="subtopic">PROJECT 3: </h2>
+	<div>
+		<table style="font-size: 100%;">
+			<tr><td style="text-align: right;font-weight: bold;">Project :</td>
+				<td align="left" style="padding-left: 6px">WMS(warehouse management systems) - Data Migration </td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Client :</td>
+				<td align="left" style="padding-left: 6px">Confidential</td>
+			</tr>			
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Duration :</td>
+				<td align="left" style="padding-left: 6px">04-Aug-2022 to Till date</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Domain :</td>
+				<td align="left" style="padding-left: 6px">Inventory Management </td>
+			</tr>
+		</table>
+	</div>
+		<br>
+		
+	<h2 class="subtopic">Description </h2>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;As an Oracle PL/SQL developer working on a data migration project, Need to ensure that the data is accurately migrated from the source to the destination database. The project involves using provided build files to run the migration process step by step and fixing any issues or errors that occur during the migration process.</p>
+	
+	<h2 class="subtopic">Roles &amp; Responsibilities: </h2>
+	<ul>
+		<li>Work closely with the data migration team to understand the requirements and goals of the project.</li>
+	<li>Review and analyze the provided build files to understand the migration process.</li>
+	<li>Execute the migration process step by step, ensuring that the data is accurately migrated from the source to the destination database.</li>
+	<li>Monitor the migration process to identify and address any issues or errors that may arise.</li>
+	<li>Perform unit testing to ensure that the migration process is successful and that the data is accurately migrated.</li>
+	<li>Work with the testing team to identify any defects or issues that may need to be addressed during the testing process.</li>
+	<li>Provide support and maintenance for the migration process after it has been completed to ensure the ongoing accuracy and reliability of the data.</li>
+	</ul>
+</div>
+
+</div>
+<br>
+
+<!---PLSQL Developer close---->
+
+<!---Mech related exp Open---->
+
+<div id="pha" style="overflow-x:auto;">
+	<h3  class="maintopic">PHA India Pvt Ltd - 1 Yr EXPERIENCE PROFILE</h3>
+</div>
+
+<div class="fbox">		
+	<div>
+		<h3 class="subtopic">PROFESSIONAL PROFILE &#160</h3>
+		<ul>Worked with PyungHwa Automotive (PHA) India Private Limited<br> 
+			Incoming inspector – Supplier Quality Assurance<br>
+			From 1st June 2017 to 6th June 2018.<br>
+		</ul>
+	</div>
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">COMPANY PROFILE </h3>
+	<ul>
+	<li>Indo, US, and Korean Joint venture Auto Component Manufacturing company</li>	
+	<li>Located at sriperumbudur and Employs 450 personnel</li>	
+	<li>Engaged in supplying of Door Latches, Strikers, Hinges, Checkers, etc to Hyundai Motor India Limited.</li>		
+	</ul>
+</div>
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">RESPONSIBILITIES </h3>
+	<ul>
+	<li>Customer Coordination (Hyundai) Maintaining Single PPM.</li> 
+	<li>Checking the overall quality of the product and make a report before sending the product to the sales department / line.</li> 
+	<li>Stock management (both SAP and physical stock).</li> 
+	<li>Critical Part layout inspection.</li> 
+	<li>Supplier PPM display, Quality alert, organization chart, work instruction preparation.</li> 
+	<li>Conducting quality confirmation tests.</li>  
+	<li>Preparation of Defect Content Report.</li>  
+	<li>Containment action & Counter Measure for Supplier Quality Concern (Incoming / Line / Customer)</li> 
+	<li>Well versed commodity are Plastic / Rubber / Pin / Cable / Pressing / Welding / Switch / Plating / Heat treatment.</li>
+	</ul>
+</div>
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">BASIC KNOWLEDGE ABOUT</h3>
+	<ul>
+	<li>3C, 5S, 4M, 7QC tools.</li> 
+	<li>8D Problem solving methodology.</li> 
+	<li>Supplier audit plan preparation. </li>
+	<li>Counter measure Verification audit / Process Audit / Product Audit / 4M Change audit.</li> 
+	<li>Commodity Wise Rejection Analysis & Monitoring the Supplier Performance.</li> 
+	<li>Weekly Basis Rejection Trend Updation.</li> 
+	<li>Daily Rejection Communicate to Supplier & Scrap Part Disposal.</li> 
+	<li>Preparation of Revalidation Plan & Verification.</li> 
+	<li>Knowledge about AOI, ISIR and PPAP Document Preparation like Process Flow Diagram, Control Plan, PFMEA.</li> 
+	<li>Process Knowledge about Plastic moulding process & Welding process.</li> 
+	<li>Process Knowledge about Electro plating and Electro painting process.</li>
+</ul>
+</div>
+
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">TECHNICAL SKILLS</h3>
+	<ul> 
+	<strong>SOFTWARE</strong> : Excel, PowerPoint, Word, SAP (essential), Creo 2.0, AutoCAD 2D.<br> 
+	<strong>PRECISION INSTRUMENTS</strong> : 2D Height gauge, Profile Projector.<br>
+	<strong>TEST</strong> : Water Resistant test,  Salt Spray Test, Hardness Test.<br>
+	</ul>
+</div>
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">OTHER INDUSTRIAL EXPERIENCE</h3>
+	<ul>
+	<li>Industrial visit to Integral Coach Factory, Perambur, Chennai, 2015.</li> 
+	<li>lnplant training at Chennai port trust, Chennai, 2016.</li> 
+	<li>Corporate visit to Barclays, DLF, Chennai, 2017.</li> 
+	<li>Undergone a project work on BHEL boiler auxiliary plant, Ranipet, 2017.</li> 
+	<li>Industrial visit to spring manufacturing industry ­ Action Spring Products, Perungudi, Chennai, 2018.</li> 
+	<li>Industrial visit to Plastic moulding industry ­ Esteem polymer Products,  Chembarambakkam, Chennai, 2018.</li> 
+	<li>Industrial visit to Robotic welding industry ­ S.P. Engineers, Kakkalur, Chennai, 2018.</li> 
+	<li>Industrial visit to Plating industry ­ Bright Metal Finishers Unit II, Irungattukottai, 2018.</li> 
+	<li>Industrial visit to Electro Paint industry ­ Phorotech India Pvt Ltd, Irungatukottai,2018.</li> 
+	<li>Industrial visit to Casting and Machining industry ­ CRP India Pvt Ltd, Thirumudivakkam, 2018.</li>
+</ul>
+</div>	
+</div>
+<br>
+<!---Mech related exp close---->
+
+<!---College profile---->
+
+<div style="overflow-x:auto;">
+	<h3 id="clg" class="maintopic">COLLEGE DAYS PROFILE</h3>
+</div>
+
+<div class="fbox">		
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">TECHNICAL EXPERIENCE</h3>
+	<ul>
+	<li>Workshop on INDUSTRIAL AUTOMATION conducted by CAD Centre, Chennai.</li> 
+	<li>Workshop on ENTREPRENEURSHIP conducted by Madha Engineering College, Chennai.</li>  
+	<li>Presented a paper on “AUTOMATIC PNEUMATIC CENTRE STAND” in National level technical symposium TORQ 2K16 held at Loyola – ICAM, Chennai.</li>  
+	<li>Presented a paper on “OPTIMISATION OF FCAW PROCESS PARAMETERS” in National level conference NCAMMT’17 held at SRM university vadapalani campus, Chennai.</li>
+</ul>
+</div>
+
+<p class="bborder"></p>
+	
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">AWARDS & ACHIEVEMENTS</h3>
+	<ul>
+	<li>Received number of award in school level DRAWING competition.</li> 
+	<li>Awarded 3rd price in district level DRAWING competition conducted by GOVT OF TAMILNADU.</li>  
+	<li>Awarded 1st  price in AD FILM MAKING in college cultures during 2015.</li> 
+	<li>Awarded for 100 % ATTENDANCE in college cultures during 2015.</li> 
+	<li>Event COORDINATOR in Technospark 2k15 in National level college symposium during 2016.</li>
+</ul>
+</div>
+
+<p class="bborder"></p>
+
+	<div align="left" style="overflow-x:auto;">
+		<h3 class="subtopic">PROJECT</h3>
+		<table align="left" style="font-size: 100%;">
+			<tr><td style="text-align: right;font-weight: bold;"> BE 3rd  Year  Project :</td>
+				<td align="left" style="padding-left: 6px">“AUTOMATIC  PNEUMATIC  CENTRE STAND”</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Role :</td>
+				<td align="left" style="padding-left: 6px">Assistant team leader</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Description :</td>
+				<td align="left" style="padding-left: 6px">We designed a centre stand for heavy cc bikes and lean persons to put a centre stand using pneumatics without any manual effort.</td>
+			</tr>
+			<tr><td>&#160</td>
+				<td>&#160</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;"> BE Final Year Project :</td>
+				<td align="left" style="padding-left: 6px">“OPTIMISATION OF FCAW PROCESS  PARAMETERS  ON BEAD PROFILE OF  CARBON  STRUCTURAL STEEL”</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Role :</td>
+				<td align="left" style="padding-left: 6px">Assistant team leader</td>
+			</tr>
+			<tr><td align="rights" style="text-align: right;font-weight: bold;">Description :</td>
+				<td align="left" style="padding-left: 6px">We make a mathematical module for flux core arc welding process parameters to get a good bead profile without defect.</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<br>
+<!---college profile Exit---->
+
+<div style="overflow-x:auto;">
+	<h3 class="subtopic">DECLARATION</h3>
+	<p>Hereby declare that all the information which given is true to the best of my knowledge and belief. - Selva
+	</p>
+</div>
+
+<!---feed box---->
+
+<div id="Timeline" class="fbox">
+	<table>
+		<tr><td><img class="tlpimg" src="images/selva.jpg"></td>
+			<td><div>Selva</div><div class="tltime">1 hrs</div></td>
+		</tr>	
+	</table>
+	<div class="tldis">This group image is created by selva using Photoshop.</div>
+	<img class="tlfullimg" src="images/clg.jpg" alt="group image"><br>
+</div>	
+
+<br>
+<div id="Timeline" class="fbox">
+	<table>
+		<tr><td><img class="tlpimg" src="images/selva.jpg"></td>
+			<td><div>Selva</div><div class="tltime">1 hrs</div></td>
+		</tr>	
+	</table>
+	<div class="tldis">PHA Friends Circle</div>
+	<img class="tlfullimg" src="images/pha.jpg" alt="group image"><br>
+</div>	
+
+<br>
+<!---finishing touch---->
+<br>
+<div id="atlast" align="center" style="background-color: black;">
+	<br>
+	<a href="#">FAQ &#160</a>
+	<a href="#">About &#160</a>
+	<a href="#">Contact us &#160</a>
+	<a href="#">Disclamer &#160</a>
+	<a href="#">Privacy policy</a>
+	<div><p style="color: white;"> While using this site, you agree to have read and accepted our terms of use, cookie and privary policy. 
+	<br><script>var theDate = new Date(); document.write(theDate.getFullYear());</script> © Selva.<br>All rights reserved.<br>&#160</p></div>	
+</div>
+</body>
+</div>
+</div>
+
+    	<script>
+		function validatePassword() {
+			var password = document.getElementById("password-input").value;
+			if (password == "12345") {
+				document.getElementById("password-error").style.display = "none";
+				document.getElementById("page1").style.display = "none";
+				document.getElementById("page2").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("password-error").style.display = "block";
+				return false;
+			}
+		}
+		
+		/* Disable ctrl, u, F12 keys */
+
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+	
+	</script>
+  </body>
+</html>

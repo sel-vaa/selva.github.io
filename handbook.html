@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>notes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+<!-- Pg Icon -->
+	<link href="images/info.png" rel="shortcut icon" />
+  </head>
+  <body oncontextmenu="return false" onload="checkForUpdate()">
+ 
+  <div id="page1"  style="display:block;" >
+    <div class="login-page">
+      <div class="form">
+        <h2>Login</h2>
+        <form onsubmit="return validatePassword();" id="password-form" class=" login-form">
+       
+          <input type="password" placeholder="Password" id="password-input">
+          <input class="btns" type="submit" value="Submit">
+        </form>
+        <p id="password-error" class="message" style="display:none; font-family: Nunito;">Incorrect password. Please try again.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+<!--------------------------------------------------------------------------------------------------->
+
+<div id="page2" style="display:none; ">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8">
+    <meta name="description" content="private Bookmark">
+    <meta name="keywords" content="Price, Today">
+    <meta name="author" content="Selva">
+   
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	
+
+<body style="font-size:calc(9px + 0.4vw);font-family: Nunito;"> 
+
+<style type="text/css">
+	.bborder{font-family: arial;border-bottom: solid grey;border-bottom-width: 0.5px;}
+	#fltimg{position: fixed;bottom:calc(9px + 1vw);right:5%;left:95%;outline: none;border-radius: 100%;box-shadow:3px 3px 2px grey;padding: 2px 2px 2px 2px;background-color: #FFFFFF;width: calc(20px + 1.5vw);height: calc(20px + 1.5vw);text-decoration: none;}
+	h2 {font-size:calc(9px + 0.5vw);}
+</style>
+
+<div id="top" ></div>
+<form method="get" action="http://www.google.com/search?" target="_blank">
+<input type="text" placeholder="Google Search..." name="q">
+<input type="submit" value="Go!" />
+</form>
+
+	<a href="#top"><img src="up.png" alt="up" id="fltimg"></a>
+
+<h2 style="font-size:calc(9px + 1vw);">REMEMBER EVERYTHING BY REREADING </h2>
+
+	<ol>
+    <li><a style="text-decoration: none;color: black;" href="https://drive.google.com/file/d/1_YF7TUWPdveiUiYV3nFx9Zo6l33YTF4j/view?usp=sharing" target="_blank" rel="nofollow noopener">Manual Testing </a></li>
+	<li><a style="text-decoration: none;color: black;" href="https://www.w3schools.com/html/" target="_blank" rel="nofollow noopener">HTML</a></li>
+    <li><a style="text-decoration: none;color: black;" href="https://www.w3schools.com/css/" target="_blank" rel="nofollow noopener">CSS</a></li>
+    <li><a style="text-decoration: none;color: black;" href="https://www.w3schools.com/sql/" target="_blank" rel="nofollow noopener">SQL</a></li>
+    <li><a style="text-decoration: none;color: black;" href="https://www.google.com/search?q=java+cheetsheet" target="_blank" rel="nofollow noopener">Java</a></li>
+    <li><a style="text-decoration: none;color: black;" href="https://www.google.com/search?q=python+cheetsheet" target="_blank" rel="nofollow noopener">Python</a></li>  
+    <li><a style="text-decoration: none;color: black;" href="https://www.google.com/search?q=selenium+cheetsheet" target="_blank" rel="nofollow noopener">selenium</a></li>
+    <li><a style="text-decoration: none;color: black;" href="https://www.google.com/search?q=aws+cheetsheet" target="_blank" rel="nofollow noopener">AWS</a></li>
+    <li><a style="text-decoration: none;color: black;" href="https://drive.google.com/file/d/1LwBZ2oyt2-BhN-v68bW0D2Cz4O2TC4Vu/view?usp=sharing" target="_blank" rel="nofollow noopener">English</a></li>
+	<li><a style="text-decoration: none;color: black;" href="https://drive.google.com/file/d/1rwbRYjhnbI5ZBFowLpdY9cwrdH5SeZjL/view?usp=sharing" target="_blank" rel="nofollow noopener">Apptitude</a></li>
+	<li><a style="text-decoration: none;color: black;" href="https://docs.google.com/document/d/e/2PACX-1vSZi1lqvN-etweYIlMTpy18kbP8KgF19PD-T1lASsJzKTq_xsr2LbG6CPaVQo5xTs03OpNaBTjZM3J-/pub" target="_blank" rel="nofollow noopener">INPROCESS.....</a></li>	
+
+</ol>
+<!--
+<p class="bborder"></p>
+
+<h2 id="csheet" >Cheatsheet</h2>
+
+	<strong>example</strong>
+	<ul>
+	<li><a href="https://overapi.com/" target="_blank" rel="nofollow noopener">All cheatsheet</a></li> 
+	</ul>
+	
+<p class="bborder"></p>
+ --->
+
+    	<script>
+		function validatePassword() {
+			var password = document.getElementById("password-input").value;
+			if (password == "67890") {
+				document.getElementById("password-error").style.display = "none";
+				document.getElementById("page1").style.display = "none";
+				document.getElementById("page2").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("password-error").style.display = "block";
+				return false;
+			}
+		}
+		
+		/* Disable ctrl, u, F12 keys */
+
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+	
+	</script>
+</body>
+</html>

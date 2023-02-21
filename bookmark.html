@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+<!-- Pg Icon -->
+	<link href="images/info.png" rel="shortcut icon" />
+  </head>
+  <body oncontextmenu="return false" onload="checkForUpdate()">
+ 
+  <div id="page1"  style="display:block;" >
+    <div class="login-page">
+      <div class="form">
+        <h2>Login</h2>
+        <form onsubmit="return validatePassword();" id="password-form" class=" login-form">
+       
+          <input type="password" placeholder="Password" id="password-input">
+          <input class="btns" type="submit" value="Submit">
+        </form>
+        <p id="password-error" class="message" style="display:none; font-family: Nunito;">Incorrect password. Please try again.</p>
+      </div>
+    </div>
+  </div>
+
+
+<!--------------------------------------------------------------------------------------------------->
+
+<div id="page2" style="display:none; ">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8">
+    <meta name="description" content="private Bookmark">
+    <meta name="keywords" content="Price, Today">
+    <meta name="author" content="Selva">
+   
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	
+<body style="font-size:calc(9px + 0.4vw);font-family: Nunito;"> 
+
+<style type="text/css">
+	.bborder{font-family: arial;border-bottom: solid grey;border-bottom-width: 0.5px;}
+	#fltimg{position: fixed;bottom:calc(9px + 1vw);right:5%;left:95%;outline: none;border-radius: 100%;box-shadow:3px 3px 2px grey;background-color: #FFFFFF;width: calc(20px + 1.5vw);height: calc(20px + 1.5vw);text-decoration: none;}
+	h2 {font-size:calc(9px + 0.5vw);}
+	
+#padd{
+	padding: calc(8px + 1.5vw);
+}
+
+</style>
+<div id="padd">
+
+<div id="top"></div>
+<form method="get" action="http://www.google.com/search?" target="_blank">
+<input type="text" placeholder="Google Search..." name="q">
+<input type="submit" value="Go!" />
+</form>
+
+	<a href="#top"><img src="up.png" alt="up" id="fltimg"></a>
+
+<h2 style="font-size:calc(9px + 1vw);">Index</h2>
+
+	<ol>
+	<li><a href="#csheet">Cheatsheet</a></li>
+	<li><a href="#oIDE">Online IDE</a></li>
+	<li><a href="#doc">Documentation</a></li>
+	<li><a href="#DB" >Databases</a></li>
+	<li><a href="#css" >CSS preprocessors</a></li>
+	<li><a href="#IDE" >Text editors / Code editors</a></li>
+	<li><a href="#MIDE">Markdown editors</a></li>
+	<li><a href="#icon">Icon</a></li>
+	<li><a href="#git">Git clients / Git services</a></li>
+	<li><a href="#wservers">Web servers</a></li>
+	<li><a href="#api">API tools</a></li>
+	<li><a href="#devenv">Local dev environments</a></li>
+	<li><a href="#dcheckers">Diff checkers</a></li>
+	<li><a href="#cexp">Code sharing / Code experimenting</a></li>
+	<li><a href="#ctools">Collaboration tools</a></li>
+	<li><a href="#insp">Inspiration</a></li>
+	<li><a href="#stest">Website speed test tools</a></li>
+	<li><a href="#wdevcom">Web development communities</a></li>
+
+	</ol>
+
+<p class="bborder"></p>
+
+<h2 id="csheet" >Cheatsheet</h2>
+
+	<strong>CSS – Cascading Style Sheets</strong>
+	<ul>
+	<li><a href="https://overapi.com/" target="_blank" rel="nofollow noopener">All cheatsheet</a></li> 
+	<li><a href="http://mac-blog.org.ua/css-3-media-queries-cheat-sheet/">Media Queries Cheat Sheet</a></li>
+	<li><a href="http://blog.uxpin.com/4596/responsive-web-design-cheat-sheet/">Responsive Web Design Cheatsheet</a></li>
+	<li><a href="http://fontfamily.io/">Check Compatabilty of Default Local Fonts</a></li>
+	</ul>
+	<strong>HTML</strong>
+	<ul>
+	<li><a href="http://websitesetup.org/html5-cheat-sheet/">HTML5 Tag Cheatsheet</a></li>
+	<li><a href="http://meiert.com/en/indices/html-elements/">HTML Elements Index</a></li>
+	<li><a href="https://farm3.staticflickr.com/2438/3894233282_347a09c124_o_d.jpg">HTML5 Cheat Sheet</a> by <a href="https://www.flickr.com/photos/antoniolupetti/">Antonio Lupetti</a></li>
+	</ul>
+	<strong>JavaScript & jQuery</strong>
+	<ul>
+	<li><a href="http://oscarotero.com/jquery/">jQuery Quick API Reference</a></></li>
+	<li><a href="http://overapi.com/javascript/">Javascript Cheatsheet via OverAPI.com</a></li>
+	</ul>
+	<strong>Markdown</strong>
+	<ul>
+	<li><a href="http://themespectre.com/wp-content/uploads/2013/08/ThemeSpectre_Markdown_CheatSheet.jpg">Printable Markdown Cheatsheet</a></li>
+	</ul>
+	<strong>Popular CSS Frameworks</strong>
+	<ul>
+	<li><a href="http://creativealive.com/master-cheat-sheet-twitter-bootstrap-3-pdf-download/">Master Cheatsheet for Bootstrap 3</a></li>
+	<li><a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Complete Font Awesome Icon Reference Cheatsheet</a></li>
+	<li><a href="http://glyphicons.bootstrapcheatsheets.com/">Bootstrap 3 Glyphicons Cheatsheet</a></li>
+	<li><a href="http://sudheerdev.github.io/Foundation5CheatSheet/">Foundation 5 Cheatsheet</a></li>
+	</ul>
+	<strong>WordPress Cheat Sheet</strong>
+	<ul>
+	<li><a href="http://cdn.onextrapixel.com/wp-content/uploads/2010/09/wordpress-cheat-sheet.pdf">WordPress: What You Need to Know in One Sheet</a></li>
+	<li><a href="http://appletree.or.kr/quick_reference_cards/Blog-CMS-Wiki/WordPress%203.0%20Cheat%20Sheet.jpg">WordPress Cheat Sheet</a></li>
+	<li><a href="http://www.wefixyourwp.com/wordpress-development-checklist/">The Ultimate WordPress Development Checklist</a></li>
+	</ul>
+	<strong>Browser Dev Tools</strong>
+	<ul>
+	<li><a href="http://anti-code.com/devtools-cheatsheet/">Chrome Devtools Cheatsheet</a></li>
+	<li><a href="http://duvet-dayz.com/firebug-cheatsheet/">Firebug Keyboard Shortcuts and Mouse Actions Cheat Sheet</a></li>
+	</ul>
+	<strong>Git & GitHub</strong>
+	<ul>
+	<li><a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">Git Cheatsheet</a></li>
+	</ul>
+	<strong>Sublime Text</strong>
+	<ul>
+	<li><a href="http://csnipp.com/s/66/-List-of-commonly-used-sublime-text-commands">List of commonly used sublime-text commands (WIN)</a></li>
+	<li><a href="http://csnipp.com/s/66/-List-of-commonly-used-sublime-text-commands">Sublime Text 3 OSX Cheatsheet</a></li>
+	</ul>
+	<strong>Email &amp; Newsletters</strong>
+	<ul>
+	<li><a href="http://kb.mailchimp.com/merge-tags/all-the-merge-tags-cheatsheet">MailChimp Merge Tags Cheatsheet</a></li>
+	<li><a href="https://campaignmonitor.com/assets/files/templates/CampaignMonitor_cheatsheet.pdf">Campaign Monitor Template Cheatsheet</a></li>
+	</ul>
+	<strong>Social Media</strong>
+	<ul>
+	<li><a href="https://github.com/seanmacentee/Social-Media-Dimensions-Cheatsheet">Social Media Dimensions Cheatsheet</a></li>
+	</ul>
+	<strong>SEO</strong>
+	<ul>
+	<li><a href="http://d2eeipcrcdle6.cloudfront.net/seo-cheat-sheet/SEOCheatSheet_2-2013.pdf">The Web Developer’s SEO Cheatsheet by Moz</a></li>
+	<li><a href="http://backlinko.com/wp-content/uploads/2014/05/on_page_SEO_infographic_large.jpg">#27. Perfect On Page SEO by Backlinko</a></li>
+	</ul>
+	<strong>Graphic Editors</strong>
+	<ul>
+	<li><a href="https://dribbble.com/shots/1522880-Sketch-3-Cheat-Sheet/attachments/230311">Sketch 3 Visual Cheatsheet</a></li>
+	<li><a href="http://ensombrecer.deviantart.com/art/Photoshop-Keyboard-Shortcuts-QWERTY-404872260">Adobe Photoshop Keyboard Shortcuts</a></li>
+	<li><a href="http://ensombrecer.deviantart.com/art/Illustrator-Keyboard-Shortcuts-QWERTY-405039540">Adobe Illustrator Keyboard Shortcuts</a></li>
+	</ul>
+
+<p class="bborder"></p>
+
+<h2 id="oIDE">Online IDE</h2>
+	<ul>
+	<li><a href="https://stackblitz.com/" target="_blank" rel="nofollow noopener">stack blitz</a></li> 
+    <li><a href="https://codepen.io/" target="_blank" rel="nofollow noopener">code pen</a></li>
+    <li><a href=" https://codesandbox.io/" target="_blank" rel="nofollow noopener">codes and box</a></li>
+	<li><a href=https://codeshare.io/ target=_blank rel="nofollow noopener">code share</a></li>
+    <li><a href=https://jsfiddle.net/ target=_blank rel="nofollow noopener">jsfiddle</a></li>
+    <li><a href=https://jsbin.com/ target=_blank rel="nofollow noopener">jsbin</a></li>
+    <li><a href=https://playcode.io/ target=_blank rel="nofollow noopener">playcode</a></li>
+    <li><a href=http://www.editpad.org/ target=_blank rel="nofollow noopener">editpad</a></li>
+    <li><a href=https://www.gitpod.io/ target=_blank rel="nofollow noopener">gitpod</a></li>
+    <li><a href=https://www.typeit.org/ target=_blank rel="nofollow noopener">typeit</a></li>
+</ul>
+
+<p class="bborder"></p>
+ 
+<h2 id="doc" >Documentation</h2>
+	 <a href="https://getbootstrap.com/" target="_blank">Get Bootstrap</a><br>
+     <a href="https://www.w3schools.com/" target="_blank">w3schools </a><br>
+     <a href="https://www.w3schools.com/" target="_blank">w3schools </a><br>
+
+<p class="bborder"></p>
+
+<strong>JavaScript library</strong>
+<ul>
+	<li><a href=http://jquery.com target=_blank rel="nofollow noopener">jQuery</a>: A fast, small, and feature-rich JavaScript library.</li>
+	<li><a href=http://backbonejs.org target=_blank rel="nofollow noopener">BackBoneJS</a>: Give your JS app some backbone with models, views, collections, & events.</li>
+
+	<li><a href=http://d3js.org target=_blank rel="nofollow noopener">D3.js</a>: A JavaScript library for manipulating documents based on data.</li>
+
+	<li><a href=https://reactjs.org target=_blank rel="nofollow noopener">React</a>: Facebook's JavaScript library developed for building user interfaces.</li>
+
+	<li><a href=http://jqueryui.com target=_blank rel="nofollow noopener">jQuery UI</a>: A curated set of user interface interactions, effects, widgets, and themes.</li>
+
+	<li><a href=http://jquerymobile.com target=_blank rel="nofollow noopener">jQuery Mobile</a>: HTML5-based user interface system designed to make responsive web sites.</li>
+
+	<li><a href=http://underscorejs.org target=_blank rel="nofollow noopener">Underscore.js</a>: Functional programming helpers without extending any built-in objects.</li>
+
+	<li><a href=http://momentjs.com target=_blank rel="nofollow noopener">Moment.js</a>: Parse, validate, manipulate, and display dates in JavaScript.</li>
+
+	<li><a href=https://lodash.com target=_blank rel="nofollow noopener">Lodash</a>: A modern utility library delivering modularity, performance, & extras.</li>
+
+	<li><a href=https://vuejs.org target=_blank rel="nofollow noopener">Vue.js</a>: An open source JavaScript framework used for building user interfaces.</li>
+
+</ul>
+
+<p class="bborder"></p>
+
+<strong>Frontend frameworks</strong>
+<ul>
+	<li><a href=http://getbootstrap.com target=_blank rel="nofollow noopener">Bootstrap</a>: HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+
+	<li><a href=http://foundation.zurb.com target=_blank rel="nofollow noopener">Foundation</a>: Family of responsive frontend frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</li>
+
+	<li><a href=http://semantic-ui.com target=_blank rel="nofollow noopener">Semantic UI</a>: Development framework that helps create beautiful, responsive layouts using human-friendly HTML.</li>
+
+	<li><a href=http://getuikit.com target=_blank rel="nofollow noopener">uikit</a>: A lightweight and modular frontend framework for developing fast and powerful web interfaces.</li>
+
+</ul>
+
+<p class="bborder"></p>
+
+<strong>web application framework</strong> 
+<ul>
+	<li><a href=http://rubyonrails.org target=_blank rel="nofollow noopener">Ruby</a>: Ruby on Rails is a web-application framework that includes everything needed to create database-backed web applications, with the MVC pattern.</li>
+
+	<li><a href=https://angular.io target=_blank rel="nofollow noopener">Angular</a>: Lets you extend HTML vocabulary for your web application. AngularJS is a framework, even though it's much more lightweight and sometimes referred to as a library.</li>
+
+	<li><a href=http://emberjs.com target=_blank rel="nofollow noopener">Ember.js</a>: A framework for creating ambitious web applications </li>
+
+	<li><a href=http://expressjs.com target=_blank rel="nofollow noopener">Express</a>: Fast and minimalist web framework for Node.js.</li>
+
+	<li><a href=https://www.meteor.com target=_blank rel="nofollow noopener">Meteor</a>: Full stack JavaScript app platform that assembles all the pieces you need to build modern web and mobile apps, with a single JavaScript codebase.</li>
+
+	<li><a href=https://www.djangoproject.com target=_blank rel="nofollow noopener">Django</a>: High-level Python Web framework that encourages rapid development and clean, pragmatic design.</li>
+
+	<li><a href=https://www.asp.net target=_blank rel="nofollow noopener">ASP.net</a>: Free, fully supported Web application framework that helps you create standards-based Web solutions.</li>
+
+	<li><a href=https://laravel.com target=_blank rel="nofollow noopener">Laravel</a>: A free, open source PHP web application framework to build web applications on MVC pattern.</li>
+
+	<li><a href=http://framework.zend.com target=_blank rel="nofollow noopener">Zend Framework 2</a>: An open source framework for developing web applications and services using PHP.</li>
+
+	<li><a href=https://phalconphp.com/en/ target=_blank rel="nofollow noopener">Phalcon</a>: A full stack PHP framework delivered as a C-extension.</li>
+
+	<li><a href=http://symfony.com target=_blank rel="nofollow noopener">Symfony</a>: A set of reusable PHP components and a web application framework.</li>
+
+	<li><a href=http://cakephp.org target=_blank rel="nofollow noopener">CakePHP</a>: A popular PHP framework that makes building web applications simpler, faster and require less code.</li>
+
+	<li><a href=http://flask.pocoo.org target=_blank rel="nofollow noopener">Flask</a>: A microframework for Python based on Werkzeug and Jinja 2.</li>
+
+	<li><a href=https://www.codeigniter.com target=_blank rel="nofollow noopener">CodeIgniter</a>: Powerful and lightweight PHP framework built for developers who need a simple and elegant toolkit to create full-featured web applications.</li>
+
+</ul>
+<p class="bborder"></p>
+
+<p>
+<strong>Tasks runners and Package managers</strong> <br> Tast runners - automating your workflow.<br>Package managers - keep track of all the packages - up to date - version</p>
+<ul>
+	<li><a href=http://gruntjs.com target=_blank rel="nofollow noopener">Grunt</a>: JavaScript task runner all about automation.</li>
+
+	<li><a href=http://gulpjs.com target=_blank rel="nofollow noopener">Gulp</a>: Keeps things simple and makes complex tasks manageable, while automating and enhancing your workflow.</li>
+
+	<li><a href=https://www.npmjs.com target=_blank rel="nofollow noopener">npm</a>: Pack manager for JavaScript.</li>
+
+	<li><a href=http://bower.io target=_blank rel="nofollow noopener">Bower</a>: A web package manager. Manage components that contain HTML, CSS, JavaScript, fonts or even image files.</li>
+
+	<li><a href=https://webpack.github.io target=_blank rel="nofollow noopener">webpack</a>: A module bundler for modern JavaScript applications.</li>
+
+</ul>
+<p class="bborder"></p>
+
+<strong>Languages / Platforms</strong><br>
+<p>Behind all the web development tools is a language. A <strong>programming language</strong> is a formal constructed language designed to communicate with a computer and create programs in which you can control the behavior. And yes we realize some of these might not always be referred to as a language.</p>
+<ul>
+	<li><a href=http://php.net target=_blank rel="nofollow noopener">PHP</a>: Popular general-purpose scripting language that is especially suited to web development.</li>
+
+	<li><a href=https://nodejs.org/en/ target=_blank rel="nofollow noopener">NodeJS</a>: Event-driven I/O server side JavaScript environment based on V8.</li>
+
+	<li><a href=https://en.wikipedia.org/wiki/JavaScript target=_blank rel="nofollow noopener">JavaScript</a>: Programming language of HTML and the web.</li>
+
+	<li><a href=https://www.w3.org/TR/html5/ target=_blank rel="nofollow noopener">HTML5</a>: Markup language, the latest version of HTML and XHTML.</li>
+
+	<li><a href=https://www.python.org target=_blank rel="nofollow noopener">Python</a>: Programming language that lets you work quickly and integrate systems more effectively.</li>
+
+	<li><a href=https://www.ruby-lang.org/en/ target=_blank rel="nofollow noopener">Ruby</a>: A dynamic, open source programming language with a focus on simplicity and productivity.</li>
+
+	<li><a href=http://www.scala-lang.org target=_blank rel="nofollow noopener">Scala</a>: Scala is a pure-bred object-oriented language allowing a gradual, easy migration to a more functional style.</li>
+	<li><a href=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3 target=_blank rel="nofollow noopener">CSS3</a>: Latest version of cascading style sheets used in frontend development of sites and applications.</li>
+	<li><a href=https://en.wikipedia.org/wiki/SQL target=_blank rel="nofollow noopener">SQL</a>: Stands for structured query language used with relational databases.</li>
+	<li><a href=https://golang.org target=_blank rel="nofollow noopener">Golang</a>: Open source programming language that makes it easy to build simple, reliable, and efficient software.</li>
+	<li><a href=https://www.rust-lang.org target=_blank rel="nofollow noopener">Rust</a>: Systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.</li>
+	<li><a href=http://elixir-lang.org target=_blank rel="nofollow noopener">Elixir</a>: Dynamic, functional language designed for building scalable and maintainable applications.</li>
+	<li><a href=https://www.typescriptlang.org target=_blank rel="nofollow noopener">TypeScript</a>: Open source programming language that is a superset of JavaScript which compiles to plain JavaScript.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="DB" >Databases</h2>
+<strong>database</strong> is a collection of information that is stored so that it can be retrieved, managed and updated.</p><ul>
+	<li><a href=https://www.mysql.com target=_blank rel="nofollow noopener">MySQL</a>: One of the world's most popular open source databases.</li>
+	<li><a href=https://mariadb.com target=_blank rel="nofollow noopener">MariaDB</a>: Made by the original developers of MySQL. MariaDB is also becoming very popular as an open source database server.</li>
+	<li><a href=https://www.mongodb.org target=_blank rel="nofollow noopener">MongoDB</a>: Next-generation database that lets you create applications never before possible.</li>
+	<li><a href=https://redis.io target=_blank rel="nofollow noopener">Redis</a>: An open source, in-memory data structure store, used as a database, cache and message broker.</li>
+	<li><a href=http://www.postgresql.org target=_blank rel="nofollow noopener">PostgreSQL</a>: A powerful, open source object-relational database system.</li>
+</ul>
+<p class="bborder"></p>
+
+<h2 id="css" >CSS preprocessors</h2>
+<p>A <strong>CSS preprocessor</strong> is basically a scripting language that extends CSS and then compiles it into regular CSS. Make sure to also check out or in-depth post on <a href=/blog/sass-vs-less>Sass vs Less</a>.</p>
+<ul>
+	<li><a href=http://sass-lang.com target=_blank rel="nofollow noopener">Sass</a>: A very mature, stable, and powerful professional grade CSS extension.</li>
+	<li><a href=http://lesscss.org target=_blank rel="nofollow noopener">Less</a>: As an extension to CSS that is also backward compatible with CSS. This makes learning Less a breeze, and if in doubt, lets you fall back to vanilla CSS.</li>
+	<li><a href=http://stylus-lang.com target=_blank rel="nofollow noopener">Stylus</a>: A new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style.</li>
+</ul>
+<p class="bborder"></p>
+
+<h2 id="IDE" >Text editors / Code editors</h2>
+<p>Whether you're taking notes, coding, or writing markdown, a good text editor is a part of our daily lives!</p>
+
+<ul><li><a href=https://atom.io target=_blank rel="nofollow noopener">Atom</a>: A text editor that's modern, approachable, yet hackable to the core. <strong>One of our favorites!</strong></li>
+	<li><a href=http://www.sublimetext.com target=_blank rel="nofollow noopener">Sublime Text</a>: A sophisticated text editor for code, markup, and prose with great performance.</li>
+	<li><a href=https://notepad-plus-plus.org target=_blank rel="nofollow noopener">Notepad++</a>: A free source code editor which supports several programming languages running under the MS Windows environment.</li>
+	<li><a href=https://code.visualstudio.com target=_blank rel="nofollow noopener">Visual Studio Code</a>: Code editing redefined and optimized for building and debugging modern web and cloud applications.</li>
+	<li><a href=https://macromates.com target=_blank rel="nofollow noopener">TextMate</a>: A code and markup editor for OS X.</li>
+	<li><a href=https://panic.com/coda/ target=_blank rel="nofollow noopener">Coda 2</a>: A fast, clean, and powerful text editor for OS X.</li>
+	<li><a href=https://www.jetbrains.com/webstorm/ target=_blank rel="nofollow noopener">WebStorm</a>: Lightweight yet powerful IDE, perfectly equipped for complex client side development and server side development with Node.js.</li>
+	<li><a href=http://www.vim.org target=_blank rel="nofollow noopener">Vim</a>: A highly configurable text editor built to enable efficient text editing.</li>
+	<li><a href=http://brackets.io target=_blank rel="nofollow noopener">Brackets</a>: A lightweight and powerful modern text editor; written in JavaScript, HTML and CSS.</li>
+	<li><a href=https://www.gnu.org/software/emacs/ target=_blank rel="nofollow noopener">Emacs</a>: An extensible, customizable text editor with built-in functions to aid in quick modifications of text and code.</li>
+	<li><a href=https://www.adobe.com/ca/products/dreamweaver.html target=_blank rel="nofollow noopener">Dreamweaver</a>: Not your typical code editor, however, Dreamweaver can be used to write code and build websites through a visual interface. Learn more in this <a href=https://websitesetup.org/dreamweaver-tutorial/ target=_blank rel="nofollow noopener">simple Dreamweaver tutorial.</a></li>
+	<li><a href=http://spacemacs.org target=_blank rel="nofollow noopener">SpaceMacs</a>: A text editor design to operate in both Emacs and Vim editor modes.</li>
+</ul>
+<p class="bborder"></p>
+
+<h2 id="MIDE">Markdown editors</h2>
+<p>Markdown is a markup language in plain text using an easy syntax that can then be converted to HTML on the fly. This is different than a WYSIWYG editor. <strong>Markdown editors</strong> are sometimes referred to as the in-between WYSIWYG and simply writing code.</p>
+<ul><li><a href=https://stackedit.io target=_blank rel="nofollow noopener">StackEdit</a>: A free online rich markdown editor.</li>
+	<li><a href=http://dillinger.io target=_blank rel="nofollow noopener">Dillinger</a>: An online cloud-enabled, HTML5, buzzword-filled Markdown editor.</li>
+	<li><a href=http://25.io/mou/ target=_blank rel="nofollow noopener">Mou</a>: Markdown editor for developers on Mac OS X.</li>
+	<li><a href=http://www.texts.io target=_blank rel="nofollow noopener">Texts</a>: A rich editor for plain text. Windows and Mac OS X.</li>
+</ul>
+<p>Some of the text editors we mentioned above also support markdown. For example, there is a <a href=https://github.com/atom/markdown-preview target=_blank rel="nofollow noopener">markdown preview package</a> for atom.</p>
+
+<p class="bborder"></p>
+
+<h2 id="icon">Icon</h2>
+
+<p>Almost every web developer, especially frontend developers will at some point or another need <strong>icons</strong> for their project. Below are some great resources for both free and paid high quality icons.</p>
+
+<ul><li><a href=http://fontawesome.io target=_blank rel="nofollow noopener">Font Awesome</a>: Scalable vector icons that can instantly be customized - size, color, drop shadow, and anything that can be done with the power of CSS.</li>
+	<li><a href=http://iconmonstr.com target=_blank rel="nofollow noopener">IconMonster</a>: A free, high quality, monstrously big and continuously growing source of simple icons. <strong>One of our favorites!</strong></li>
+	<li><a href=https://icons8.com target=_blank rel="nofollow noopener">Icons8</a>: An extensive list of highly customizable icons created by a single design team.</li>
+	<li><a href=https://www.iconfinder.com target=_blank rel="nofollow noopener">IconFinder</a>: Iconfinder provides beautiful icons to millions of designers and developers.</li>
+	<li><a href=http://fontello.com target=_blank rel="nofollow noopener">Fontello</a>: Tool to build custom fonts with icons.</li>
+	<li><a href=https://thenounproject.com target=_blank rel="nofollow noopener">Noun Project</a>: Over a million curated icons. Available in both free as well as paid versions for greater customizability.</li>
+</ul>
+<p>For more great icon providers, check out our complete list of <a href=/blog/icon-library>16 popular icon library resources</a>.</p>
+
+<p class="bborder"></p>
+
+<h2 id="git">Git clients / Git services</h2>
+<p>Git is a source code management system for software and web development known for distributed revision control. When working with teams, using a <strong>git client</strong> to push code changes from dev to production is a way to maintain the chaos and ensure things are tested so they don't break your live web application or site.</p>
+
+<ul><li><a href=https://www.sourcetreeapp.com target=_blank rel="nofollow noopener">SourceTree</a>: A free Git & Mercurial client for Windows or Mac. Atlassian also makes a pretty cool team Git client called Bitbucket.</li>
+	<li><a href=http://www.gitkraken.com target=_blank rel="nofollow noopener">GitKraken</a> (Beta): A free, intuitive, fast, and beautiful cross-platform Git client.</li>
+	<li><a href=https://www.git-tower.com target=_blank rel="nofollow noopener">Tower 2</a>: Version control with Git - made easy. In a beautiful, efficient, and powerful app.</li>
+	<li><a href=https://desktop.github.com target=_blank rel="nofollow noopener">GitHub Client</a>: A seamless way to contribute to projects on GitHub and GitHub Enterprise.</li>
+	<li><a href=https://gogs.io target=_blank rel="nofollow noopener">Gogs</a>: A painless self-hosted Git service based on the Go language.</li>
+	<li><a href=https://about.gitlab.com/gitlab-com/ target=_blank rel="nofollow noopener">GitLab</a>: Host your private and public software projects for free.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="wservers">Web servers</h2>
+<p>The web server you ultimately end up using will usually depend on a combination of personal preference, functionality, or preexisting infrastructure. Nginx and Apache are the two most widely used web servers around, however, there are other options.</p>
+
+<ul><li><a href=https://www.nginx.com target=_blank rel="nofollow noopener">Nginx</a>: An open source and high-performant web server. Handles static content well and is lightweight.</li>
+	<li><a href=https://httpd.apache.org target=_blank rel="nofollow noopener">Apache</a>: Currently powers almost 50% of all websites. Has a larger community around it and a great selection of modules.</li>
+	<li><a href=https://www.iis.net target=_blank rel="nofollow noopener">IIS</a>: An extensible web server created by Microsoft. Offers excellent security and corporate support, therefore is not open source.</li>
+	<li><a href=https://caddyserver.com target=_blank rel="nofollow noopener">Caddy</a>: A relatively new web server. It is an open source, HTTP/2 web server with automatic HTTPS.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="api">API tools</h2>
+<p>Web developers typically deal with APIs on a daily basis. They are essential in today's web development environment, however, can sometimes be difficult to deal with in terms of monitoring, creating, or combining. Thankfully, there are a variety of tools available to make working with APIs much more efficient.</p>
+<ul><li><a href=https://www.runscope.com target=_blank rel="nofollow noopener">Runscope</a>: An API performance testing, monitoring, and debugging solution.</li>
+	<li><a href=https://zapier.com target=_blank rel="nofollow noopener">Zapier</a>: Connect the APIs of various apps and services in order to automate workflows and enable automation.</li>
+	<li><a href=https://www.getpostman.com target=_blank rel="nofollow noopener">Postman</a>: Complete API development environment. Everything from designing, testing, monitoring, and publishing.</li>
+	<li><a href=https://www.soapui.org target=_blank rel="nofollow noopener">SoapUI</a>: Advanced REST and SOAP testing tool. Ability to perform functional testing, security testing, performance testing, etc.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="devenv">Local dev environments</h2>
+<p>Depending upon what OS you are running or the computer you currently have access to, it might be necessary to launch a quick <strong>local dev environment</strong>. There are a lot of free utilities that bundle Apache, mySQL, phpmyAdmin, etc. all together. This can be a quick way to test something on your local machine. A lot of them even have portable versions.</p>
+<ul><li><a href=https://www.apachefriends.org/index.html target=_blank rel="nofollow noopener">XAMPP</a>: Completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl.</li>
+	<li><a href=https://www.mamp.info/en/ target=_blank rel="nofollow noopener">MAMP</a>: Local server environment in a matter of seconds on OS X or Windows.</li>
+	<li><a href=http://www.wampserver.com/en/ target=_blank rel="nofollow noopener">WampServer</a>: Windows web development environment. It allows you to create web applications with Apache2, PHP and a MySQL database.</li>
+	<li><a href=https://www.vagrantup.com target=_blank rel="nofollow noopener">Vagrant</a>: Create and configure lightweight, reproducible, and portable development environments.</li>
+	<li><a href=https://laragon.org target=_blank rel="nofollow noopener">Laragon</a>: A great fast and easy way to create an isolated dev environment on Windows. Includes Mysql, PHP Memcached, Redis, Apache, and awesome for working with your Laravel projects.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="dcheckers">Diff checkers</h2>
+<p>Diff checkers can help you compare differences between files and then merge the changes. A lot of this can be done from CLI, but sometimes it can be helpful to see a more visual representation.</p>
+
+<ul><li><a href=https://www.diffchecker.com target=_blank rel="nofollow noopener">Diffchecker</a>: Online diff tool to compare text differences between two text files. Great if you are on the go and quickly need to compare something.</li>
+	<li><a href=http://www.scootersoftware.com target=_blank rel="nofollow noopener">Beyond Compare</a>: A program to compare files and folders using simple, powerful commands that focus on the differences you're interested in and ignore those you're not.</li>
+</ul>
+<p>A lot of the free text editors we mentioned above also have plugins or extensions which allow you to diff or compare your files.</p>
+
+
+<p class="bborder"></p>
+
+<h2 id="cexp">Code sharing / Code experimenting</h2>
+<p>There is always that time when you are on Skype or Google hangout with another developer and you want him or her to take a quick look at your code. There are great team tools for <strong>sharing code</strong> like Slack, but if they aren't a member of your team there are some great quick alternatives. Remember not to share anything secure.</p>
+
+<ul>
+	<li><a href=http://jsbin.com target=_blank rel="nofollow noopener">JS Bin</a>: Tool for experimenting with web languages. In particular HTML, CSS and JavaScript, Markdown, Jade and Sass.</li>
+	<li><a href=https://jsfiddle.net target=_blank rel="nofollow noopener">JSfiddle</a>: Custom environment to test your JavaScript, HTML, and CSS code right inside your browser.</li>
+	<li><a href=https://codeshare.io target=_blank rel="nofollow noopener">codeshare</a>: Share code in real time with other developers.</li>
+	<li><a href=http://dabblet.com target=_blank rel="nofollow noopener">Dabblet</a>: Interactive playground for quickly testing snippets of CSS and HTML code.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="ctools">Collaboration tools</h2>
+<p>Every great development team needs a way to stay in touch, <strong>collaborate</strong>, and be productive. A lot of teams work remotely now. The team at KeyCDN is actually spread across many different continents. Tools like these below can help employees streamline their development workflow.</p>
+<ul>
+	<li><a href="https://slack.com/r/0d5amdd3-0h4fmxst%20rel=" target=_blank rel="nofollow noopener">Slack</a>: Messaging app for teams that is on a mission to make your working life simpler, more pleasant, and more productive. <strong>One of our favorites, we use this at KeyCDN!</strong></li>
+	<li><a href=https://trello.com target=_blank rel="nofollow noopener">Trello</a>: Flexible and visual way to organize anything with anyone. We also use this as KeyCDN.</li>
+	<li><a href=https://glip.com target=_blank rel="nofollow noopener">Glip</a>: Real-time messaging with integrated task management, video conferencing, shared calendars and more.</li>
+	<li><a href=https://asana.com target=_blank rel="nofollow noopener">Asana</a>: Team collaboration tool for teams to track their work and results.</li>
+	<li><a href=https://www.atlassian.com/software/jira target=_blank rel="nofollow noopener">Jira</a>: Built for every member of your software team to plan, track, and release great software or web applications.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="insp">Inspiration</h2>
+<p>We all need <strong>inspiration</strong> at some point or another. For frontend developers especially, from time to time, it can be beneficial to check out what other people are doing. This can be a great source of inspiration, new ideas, and making sure your web application or site doesn't fall behind the times.</p>
+<ul>
+	<li><a href=http://codepen.io target=_blank rel="nofollow noopener">CodePen</a>: Show off your latest creation and get feedback. Build a test case for that pesky bug. Find example design patterns and inspiration for your projects.</li>
+	<li><a href=https://dribbble.com target=_blank rel="nofollow noopener">Dribble</a>: A community of designers sharing screenshots of their work, process, and projects.</li>
+	<li><a href=https://www.behance.net target=_blank rel="nofollow noopener">Behance</a>: Another community-driven resource where users can showcase and discover creative work.</li>
+</ul>
+
+<p class="bborder"></p>
+
+<h2 id="stest">Website speed test tools</h2>
+<p>The speed of a website can be a critical factor to its success. Faster loading websites can benefit from higher SEO rankings, higher conversion rates, lower bounce rates, and a better overall user experience and engagement. It is important to take advantage of the many free tools available for testing <strong>website speed</strong>.</p>
+<ul>
+	<li><a href=https://tools.keycdn.com/speed>Website Speed Test</a>: A page speed test developed by KeyCDN that includes a waterfall breakdown and the website preview.</li>
+	<li><a href=https://developers.google.com/speed/pagespeed/insights/ target=_blank rel="nofollow noopener">Google PageSpeed Insights</a>: PageSpeed Insights analyzes the content of a web page, then generates suggestions to make that page faster.</li>
+	<li><a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en" target=_blank rel="nofollow noopener">Google Chrome DevTools</a>: Set of web authoring and debugging tools built into Google Chrome.</li>
+	<li><a href=https://www.dotcom-tools.com/website-speed-test.aspx target=_blank rel="nofollow noopener">Dotcom-Tools Speed Test</a>: Test the speed of your website in real browsers from 25 locations worldwide.</li>
+	<li><a href=http://www.webpagetest.org target=_blank rel="nofollow noopener">WebPageTest</a>: Run a free website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds.</li>
+	<li><a href=http://tools.pingdom.com/fpt/ target=_blank rel="nofollow noopener">Pingdom</a>: Test the load time of that page, analyze it and find bottlenecks.</li>
+	<li><a href=https://gtmetrix.com target=_blank rel="nofollow noopener">GTmetrix</a>: Gives you insight on how well your site loads and provides actionable recommendations on how to optimize it.</li>
+</ul>
+<p>You can see a more in-depth list on our post about <a href=/blog/website-speed-test-tools>website speed test tools</a>.</p>
+
+<p class="bborder"></p>
+
+<h2 id="wdevcom">Web development communities</h2>
+<p>Every web developer has been there. They have a problem and what do they do? Well, they go to Google to find a quick answer. The web offers so much content right at our fingertips that it makes it easy to diagnose and troubleshoot problems when they arise. Check out a few good <strong>web development communities</strong> below.</p>
+<ul>
+	<li><a href=http://stackoverflow.com target=_blank rel="nofollow noopener">Stack Overflow</a>: Community of 4.7 million programmers, just like you, helping each other.</li>
+	<li><a href=https://frontendfront.com target=_blank rel="nofollow noopener">Frontend Front</a>: A place where frontend developers can ask questions, share interesting links, and show their work to the rest of the community.</li>
+	<li><a href=https://hashnode.com target=_blank rel="nofollow noopener">Hashnode</a>: Global community for software developers to connect and learn programming from each other.</li>
+	<li><a href=https://refind.com target=_blank rel="nofollow noopener">Refind</a>: Community of founders, hackers, and designers who collect and share the best links on the web.</li>
+	<li><a href=https://www.facebook.com/groups/wpfrontenddevs/ target=_blank rel="nofollow noopener">Facebook WordPress Front End Developers Group</a>: WordPress Front End Developers is a group for devs to ask questions, share their work, discuss emerging trends, and collaborate.</li>
+	<li><a href=https://www.linkedin.com/groups/139851/profile target=_blank rel="nofollow noopener">LinkedIn Web Design and Development Professionals Group</a>: Networking and information sharing resource for professional Web Designers, Web Developers and Web Masters.</li>
+	<li><a href=https://www.linkedin.com/groups/2192521/profile target=_blank rel="nofollow noopener">LinkedIn Web Site Development Group</a>: Website design & programming.</li>
+	<li><a href=https://www.linkedin.com/groups/2195403/profile target=_blank rel="nofollow noopener">LinkedIn PHP Developer Group</a>: PHP, Mysql, Drupal, Joomla, Zend, Cake, MVC.</li>
+	<li><a href=https://www.linkedin.com/groups/3722491 target=_blank rel="nofollow noopener">LinkedIn WordPress Developers Group</a>: WordPress Codex. Using WP as CMS and CMF.</li>
+	<li><a href=http://www.webdeveloper.com/forum/ target=_blank rel="nofollow noopener">Webdeveloper.com</a>: Where web developers and designers learn how to build web sites, program in HTML, Java and JavaScript.</li>
+	<li><a href=https://www.sitepoint.com/community/ target=_blank rel="nofollow noopener">Sitepoint Forums</a>: Web development discussion.</li>
+	<li><a href=https://www.reddit.com/r/perfmatters/ target=_blank rel="nofollow noopener">/r/perfmatters</a>: The #1 subreddit about web performance and web development.</li>
+	<li><a href=https://www.reddit.com/r/webdev target=_blank rel="nofollow noopener">/r/webdev</a>: What's new for web developers.</li>
+</ul>
+</div>
+    	<script>
+		function validatePassword() {
+			var password = document.getElementById("password-input").value;
+			if (password == "67890") {
+				document.getElementById("password-error").style.display = "none";
+				document.getElementById("page1").style.display = "none";
+				document.getElementById("page2").style.display = "block";
+				return false;
+			} else {
+				document.getElementById("password-error").style.display = "block";
+				return false;
+			}
+		}
+		
+		/* Disable ctrl, u, F12 keys */
+
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+	
+	</script>
+
+</body>
+</html>

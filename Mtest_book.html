@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SEL Bookmark</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8">
+    <meta name="description" content="private Bookmark">
+    <meta name="keywords" content="Price, Today">
+    <meta name="author" content="Selva">
+   
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	
+</head>
+<body style="font-size:calc(9px + 0.4vw);font-family: Nunito;padding: calc(1vw);"> 
+
+<style type="text/css">
+	.bborder{font-family: arial;border-bottom: solid grey;border-bottom-width: 0.5px;}
+	#fltimg{position: fixed;bottom:calc(9px + 1vw);right:5%;left:95%;outline: none;border-radius: 100%;box-shadow:3px 3px 2px grey;padding: 2px 2px 2px 2px;background-color: #FFFFFF;width: calc(20px + 1.5vw);height: calc(20px + 1.5vw);text-decoration: none;}
+	h2 {font-size:calc(9px + 0.5vw);}
+</style>
+
+<div id="top" ></div>
+<form method="get" action="http://www.google.com/search?" target="_blank">
+<input type="text" placeholder="Google Search..." name="q">
+<input type="submit" value="Go!" />
+</form>
+
+	<a href="#top"><img src="up.png" alt="up" id="fltimg"></a>
+
+<h2 style="font-size:calc(9px + 1vw);">MANUAL TESTING NOTES = word to HTML direct conversion trail</h2>
+<p><strong>S/w</strong> is a collection of computer program that helps to perform a task.</p>
+<p>&nbsp; &nbsp; Types : system, programming, application.</p>
+<p>&ldquo;<strong>Software quality</strong> is nothing but delivering a bug free application and delivered on time with all requirements.&rdquo;</p>
+<p>&ldquo;A defect is a deviation or mismatch from the requirements&rdquo;.</p>
+<hr>
+<p><strong>Project Vs Product</strong></p>
+<hr>
+<p><strong>QA</strong> (process related; high level; prevent) Vs</p>
+<p><strong>QC</strong> (actual testing(we);detect) Vs <strong>QE</strong> (Code:Auto test)</p>
+<hr>
+<p><strong>Error</strong> (human mistake) Vs <strong>Bug/defect</strong> (not working) Vs <strong>Failure</strong> (deviation at customer end)</p>
+<hr>
+<p><strong>Use case</strong> : describes the requirements ---&gt; actor, action, outcome</p>
+<p><strong>Test scenario</strong>: possible area to bes tested (what to test)</p>
+<p><strong>Test cases:</strong> step by step actions ---&gt; test steps, expected results and actual results</p>
+<hr>
+
+<p><u><strong>Software Development Life Cycle (SDLC)</strong></u></p>
+<p><strong><u>Initial</u></strong></p>
+<p style="margin-left: 20px;">Requirements Collection :</p>
+<p style="margin-left: 40px;">Feasibility Study = technical, financial, resource</p>
+<p style="margin-left: 60px;">1. Review CRS</p>
+<p style="margin-left: 100px;">a. conflicts in the requirements</p>
+<p style="margin-left: 100px;">b. missing requirements</p>
+<p style="margin-left: 100px;">c. wrong requirements</p>
+<p style="margin-left: 60px;">2. Write Acceptance Test plan &amp; &nbsp;cases</p>
+<p><u>Roles&nbsp;</u><u>Involved</u>: Business Analyst (BA), System Architects</p>
+<p><u>Outcome</u>: System Requirement Specification (SRS)</p>
+<p><strong><u>Analysis</u></strong></p>
+<p style="margin-left: 20px;">1. Review SRS against CRS</p>
+<p style="margin-left: 40px;">a. every CRS is converted to SRS</p>
+<p style="margin-left: 40px;">b. CRS not converted properly to SRS</p>
+<p style="margin-left: 20px;">2. Write System Test plan &amp; case</p>
+<p><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Roles&nbsp;</u><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Involved</u><span style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>:</span>&nbsp; Dev &amp; QA team, Architects, Project Managers</p>
+<p><u>Outcome</u>: Final SRS approved by customer, Technology selection for both Dev &amp; QA</p>
+<p><strong><u>Design</u></strong></p>
+<p style="margin-left: 20px;">HLD &ndash; High Level Design</p>
+<p style="margin-left: 40px;">Review HLD, Write Integration test &amp; case</p>
+<p style="margin-left: 20px;">LLD &ndash; Low Level Design</p>
+<p style="margin-left: 40px;">Review LLD, Write Functional test &amp; case</p>
+<p><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Roles&nbsp;</u><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Involved</u><span style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>:</span>&nbsp; Architects &amp; Team</p>
+<p>Outcome: Technical Design Document (TDD)</p>
+<p><strong><u>Coding</u></strong></p>
+<p style="margin-left: 20px;">White box testing (by dev) = unit testing and intergration testing</p>
+<p style="margin-left: 40px;"><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Roles&nbsp;</u><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Involved</u><span style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>:</span>&nbsp; Developers and Architects</p>
+<p style="margin-left: 40px;"><u>Outcome</u>: Programs or Application or Module</p>
+<p><strong><u>Testing</u></strong></p>
+<p style="margin-left: 20px;"><strong>Black Box testing (by testers) = System testing and user acceptence testing</strong></p>
+<p style="margin-left: 40px;"><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Roles&nbsp;</u><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Involved</u><span style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>:</span>&nbsp; Testers, Developers</p>
+<p style="margin-left: 40px;"><u>Outcome</u>: Defects, Test Summary Report, Test Plan, Test Case document</p>
+<p><strong><u>Delivery &amp; Maintenance</u></strong></p>
+<p style="margin-left: 20px;"><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Roles&nbsp;</u><u style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Involved</u><span style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>:</span>&nbsp; Testers, Developers, Customer, Business team, Architects, Project Manager, and Delivery Manager</p>
+<p style="margin-left: 20px;"><u>Outcome</u>: Quality Product, Enhancements &amp; Production Issues (Maintenance)</p>
+<hr>
+
+<p><u><strong>Software Development Life Cycle (SDLC) Models</strong></u></p>
+
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+    <p><strong>Water Fall Model</strong> = linear-sequential life cycle model.</p>
+    <ul>
+        <li>Adv - simple ,understand, easy to manage, one at a time.</li>
+        <li>Disadv - difficult to go back and change, No working until late, High risk, Not a good, long and ongoing projects.</li>
+        <li>When to use - requirements are very well known, clear and fixed, short project</li>
+    </ul>
+    <p><strong>V Model</strong> = sequential manner in V-shape, Each phase completed before next phase begins. Testing parallel</p>
+    <ul>
+        <li>Adva - Simple and easy to use, Testing before coding, saves a lot of time, Proactive defect tracking</li>
+        <li>Disadv - Software is developed on implementation phase, so no early prototypes , If any changes in midway, documents to be updated.</li>
+        <li>When to use - small to medium sized projects, requirements are clearly defined and fixed, ample technical resources with needed technical expertise.</li>
+    </ul>
+    <p><strong>Prototype Model&nbsp;</strong>= attractive duplicated and idea requirements.</p>
+    <ul>
+        <li>Adva = actively involved in dev, better understanding, Errors detected earlier, Quicker user feedback., Missing functionality identified, Confusing or difficult functions identified</li>
+        <li>Disadv = scope may expand beyond original plans, Incomplete application not to be used as full system was designed</li>
+        <li>When to use = desired system needs have a lot of interaction with end users.</li>
+    </ul>
+    <p><strong>Agile Model&nbsp;</strong>= iterative and incremental approach, rapids mall incremental cycles releases.</p>
+    <ul>
+        <li>Adva - Good communication b/w team, Working software is delivered frequently, no need to wait, Continuous improve tech &amp; design, Even late/middle changes in requirements are welcomed.</li>
+        <li>Disadv - effort required at the beginning, project easily get taken off track if is not clear what final outcome that they want, Only senior programmers are capable of taking decisions,&nbsp;</li>
+        <li>When to use - changes at very little cost, new feature work of a few days, limited planning is required to get started.</li>
+    </ul>
+
+<p><strong>Scrum</strong>: is a Framework through we build s/w by following
+	agile principles.&nbsp;</p>
+	<p style="margin-left: 20px;">Product owner (define, prioratize, accept &amp;
+	reject), scrum master (facilitating and driving), dev &amp; testing team</p>
+	<p><strong>Scrum terminologies</strong></p>
+	<ul>
+	<li>User story &ndash; small feature/ module</li>
+	<li>epic &ndash; ccollection of user stories</li>
+	<li>product backlog &ndash; list of user stories</li>
+	<li>product backlog planning &ndash; discuss for 1st sprint</li>
+	<li>sprint / iteration &ndash; time to complete user stories (2-4 weeks)
+	</li>
+	<li>sprint backlog &ndash; list off committed stories by Dev/QA</li>
+	<li>scrum meeting / call / standup call &ndash; 15 mins everyday &ndash;
+	task done yesterday, today, any challeges</li>
+	<li>sprint retrospective &ndash; after complete sprint, challeges ideas
+	improvements discussion</li>
+	<li>story point &ndash; rough time estimation of user stories in fibonacci
+	series (0 1 1 2 3 5 8...)</li>
+	<li>Burnddown chart &ndash; time remaining in sprint</li>
+	<li>Role, artefacts(documents), Ceremonies(meeting)</li>
+
+</ul>
+<p><strong>Jira (Atlassian)&ndash; Agile mgmt tool</strong></p>
+<p style="margin-left: 20px;">create project --&gt; backlog (epic) --&gt; mk
+stories --&gt; story pints --&gt; mk sprint --&gt; add stories to sprint --&gt;
+</p>
+<p style="margin-left: 20px;">start sprint --&gt; ad sub task</p>
+<p>-----------------------------------------------------------------------------------------</p>
+<p>&nbsp;<u><strong>Software Testing Methodologies</strong></u></p>
+<p><br></p>
+<p>&nbsp;<strong>Block Box Testing&nbsp;</strong>or input/output driven testing- without having technical knowledge, Specification-based testing technique, covers both functional and non-functional testing.</p>
+<p><br></p>
+<p>Block box testing techniques</p>
+<p>- Equivalence partitioning</p>
+<p>- Boundary value analysis</p>
+<p>- Error Guessing</p>
+
+<p><strong>White box testing&nbsp;</strong>= glass-box - require knowledge, tested by developers</p>
+
+<p><strong>Grey Box testing</strong> or clear box translucent testing = limited test knowledge, access to design documents and the database.</p>
+<p>----------------------------------------------------------------------------------------</p>
+<p align="CENTER"><u><strong>5. Levels of testing</strong></u></p>
+<p>Each phase goes through the testing</p>
+
+<p><strong>1. Unit Testing</strong> - &nbsp;smallest testable part</p>
+<p><strong>2. Module/Component Testing&nbsp;</strong>- done separately.</p>
+<p><strong>3. Integration Testing&nbsp;</strong>- modules are integrated - test the behavior and functionality</p>
+<p>Integration Testing Techniques:</p>
+<ol>
+     <li><p>Incremental Integration Testing</p></li>
+<li><p>- Top down</p></li>
+<li><p>- Bottom Up</p></li>
+
+</ol>
+<ol> <li><p>Non-Incremental Integration Testing</p></li></ol>
+   
+<p>data flow is very complex, difficult to identify who is parent and who is child</p>
+<p>Stub: A stub is called from the software component to be tested.</p>
+<p>Driver: A driver calls the component to be tested.</p>
+<p><strong>4. System Testing</strong> - It is end-to-end testing wherein testing environment is similar to the production environment.</p>
+<ol>
+            <li>
+                <p>GUI (Graphical User interference) testing check list</p>
+            </li>
+            <li>
+                <p>Functional Testing</p>
+            </li>
+            <li>
+                <p>Non &nbsp; &nbsp; &nbsp; &nbsp; functional testing</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            </li>
+            <li>
+                <p>Usability &nbsp; &nbsp; &nbsp; &nbsp; testing (help/user manual).</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<p><br></p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ol>
+    </li>
+</ol>
+<p><strong>5. User Acceptance Testing (UAT)</strong> &ndash; Validation.</p>
+<p>Who : &ldquo;Acceptance testing is basically done by the user or customer although other stakeholders may be involved as well.&rdquo;</p>
+<p><br></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p><strong>Alpha &nbsp; &nbsp; &nbsp; &nbsp; Testing:&nbsp;</strong>done at developer&apos;s site by customer.</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            </li>
+            <li>
+                <p><strong>Beta &nbsp; &nbsp; &nbsp; &nbsp; testing:</strong> done at customers site. &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p>--------------------------------------------------------------------------------------------------</p>
+<p align="CENTER"><u><strong>6. Verification &amp; Validation</strong></u></p>
+<p align="CENTER"><br></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Verification</strong>&nbsp; &nbsp; &nbsp;= evaluating work-products (not the actual final product) of &nbsp; &nbsp; development phase &nbsp; &nbsp;&nbsp;</p>
+    </li>
+</ul>
+<p>Who perform: Peers (Sr Team Members, Architects, Analysts)</p>
+<p><br></p>
+<p><strong>Static testing&nbsp;</strong>: Testing documents,</p>
+<p>&nbsp; &nbsp; Techniques:</p>
+<p>- Reviews</p>
+<p>&nbsp; &nbsp; All phase have review (by single)</p>
+<p>a. Formal Review = contains: Planning, Kick-off, Preparation, Review meeting, Rework.</p>
+<p>b. Informal Review = not documented.</p>
+<p>- Inspections = Formal, planned with all, during static testing phase.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Reader(auther), writer(mom), moderator (orgaz)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; - Walk through (with 1/more peers, informal review, no plan, no mom)</p>
+<p><br></p>
+<p><strong>Dynamic testing :</strong> Testing actual s/w like UT,IT,ST,UAT</p>
+<p><br></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Validation</strong>&nbsp; &nbsp; &nbsp;= evaluating or at the end of the development process &nbsp; &nbsp;&nbsp;</p>
+    </li>
+</ul>
+<p>Who will perform: Testing Team, Dev Team, Client or BA team</p>
+<p>Criteria Verification Validation</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p><br></p>
+<p align="CENTER"><u><strong>7. Functional &amp; Non Functional Testing</strong></u></p>
+<p align="CENTER"><br></p>
+<p><strong>Functional Testing: test the features/functionality&nbsp;</strong></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>Object &nbsp; &nbsp; properties testing</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>database/backend &nbsp; &nbsp; testing : DML- data manipulation language (inst/updt/del/select)</p>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p>(WhiteBox &nbsp; &nbsp; &nbsp; &nbsp; by dev) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ul>
+                    <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+                    <li>
+                        <p>table &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; column level validation</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <p>relation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b/w tables</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <p>functions &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; / procedures / triggers / indexes / views etc</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                </ul>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>error &nbsp; &nbsp; handliing &ndash; for incorrect data/invalid user</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>calculation/manipulation &nbsp; &nbsp; testing</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>links &nbsp; &nbsp; existencce &amp; links execcution &nbsp; &nbsp;&nbsp;</p>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p>internal, &nbsp; &nbsp; &nbsp; &nbsp; external, broken</p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>cookies(temp &nbsp; &nbsp; files by browser) and sessions (time slot by server)</p>&nbsp; &nbsp;&nbsp;<p><br></p>
+    </li>
+</ul>
+<ol>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Smoke &nbsp; &nbsp; Testing</strong> / Build Verification Test: testing the basic &nbsp; &nbsp; functionality in unstable s/w, NOT tested s/w, build passes.</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Sanity &nbsp; &nbsp; Testing&nbsp;</strong>/ &nbsp;Basic Acceptance Test = basic test when new stable &nbsp; &nbsp; build received for testing.</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Re-testing</strong>: &nbsp; &nbsp; previously failed test against new software, ck resolved. &nbsp; &nbsp;&nbsp;</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Regression &nbsp; &nbsp; Testing</strong>: verify NOT broken any other parts by recent code &nbsp; &nbsp; changes.</p>
+    </li>
+</ol>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p>Unit, &nbsp; &nbsp; &nbsp; &nbsp; regional and full regression testing</p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+</ul>
+<ol start="5">
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Exploratory &nbsp; &nbsp; Testing</strong>: without any documents (test cases or test planning) to &nbsp; &nbsp; learn</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Adhoc &nbsp; &nbsp; testing :&nbsp;</strong>with knowdlege, &nbsp; &nbsp; without doc, aims to break.</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Monkey/Gorilla &nbsp; &nbsp; Testing</strong>: &nbsp;without knowledge and doc, test randomly to break</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Positive/Negative</strong>&nbsp; &nbsp; &nbsp;&ndash; for valid and invalid inputs</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>End &nbsp; &nbsp; to End Testing:</strong> test whether the flow of an app from start to &nbsp; &nbsp; finish.</p>
+    </li>
+</ol>
+<p><br></p>
+<p><strong>Non Functional Testing:</strong></p>
+<p><br></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>User &nbsp; &nbsp; Interface Testing: (</strong>GUI) testing as designed.</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Usability &nbsp; &nbsp; Testing:</strong>&nbsp; is user-friendly or not = How easy it is to use, &nbsp; &nbsp; learn, convenient</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Performance &nbsp; &nbsp; Testing:</strong>&nbsp; how fast at particular workload. (Web based app)</p>
+    </li>
+    <li>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p>Stress &nbsp; &nbsp; &nbsp; &nbsp; Testing: Sudden load &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            </li>
+            <li>
+                <p>Load &nbsp; &nbsp; &nbsp; &nbsp; Testing: &nbsp;Expected increasing load(users). &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            </li>
+            <li>
+                <p>Volume &nbsp; &nbsp; &nbsp; &nbsp; testing: How much data able to handle.</p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>
+    </li>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Security &nbsp; &nbsp; Testing:</strong>&nbsp; hack the system</p>
+    </li>
+</ul>
+<p>1. Confidentiality - not be visible to another customer</p>
+<p>2. Integrity - data stored and displayed &nbsp;correct</p>
+<p>3. Authentication - &nbsp;valid user check</p>
+<p>4. Authorization/access &ndash; permission of valid user</p>
+<p>5. Availability - access their account</p>
+<p>6. Non-repudiation - data change took place</p>
+<p><br></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Compatibility &nbsp; &nbsp; Testing:</strong></p>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p>Forward &nbsp; &nbsp; &nbsp; &nbsp; and backward version compatibility</p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Hardware &nbsp; &nbsp; configuration testing&nbsp;</strong>--&gt; &nbsp;web browsers, OS, hardware &nbsp; &nbsp; requirment.</p>
+    </li>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p><strong>Installation &nbsp; &nbsp; Testing: &nbsp;</strong>&nbsp; &nbsp; &nbsp;</p>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+            <li>
+                <p>screen &nbsp; &nbsp; &nbsp; &nbsp; navigation simple understandable or not</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            </li>
+            <li>
+                <p>upgrade, &nbsp; &nbsp; &nbsp; &nbsp; install, uninstall.</p>&nbsp; &nbsp;&nbsp;
+            </li>
+        </ul>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Recovery &nbsp; &nbsp; Testing:</strong>&nbsp; how fast recover after any type of crash/failure to &nbsp; &nbsp; normal</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Localization &nbsp; &nbsp; Testing:&nbsp;</strong>Culture/locale-specific, language-specific &amp; &nbsp; &nbsp; region-specific areas (chinese apps)</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p><strong>Globalization &nbsp; &nbsp; Testing</strong>: test all types of international inputs Eg: zip, &nbsp; &nbsp; language</p>
+    </li>
+</ul>
+<p>---------------------------------------------------------------------------------------------------------------------------<p><br></p>
+<p align="CENTER"><u><strong>9. Software Testing Life Cycle (STLC)</strong></u></p>
+<p align="CENTER"><br></p>
+<p><strong>i) Requirement Analysis</strong></p>
+<p>&nbsp; &nbsp; <u>Entry Criteria</u>:&nbsp;</p>
+<p>&nbsp; &nbsp; The requirements can be in any of the following forms,</p>
+<p> CRS (Customer Requirement Specification)</p>
+<p> SRS (System Requirement Specification)</p>
+<p> FS (Functional Specification)</p>
+<p> If we don&apos;t have requirements then do exploratory testing.</p>
+<p> Use case is a pictorial representation of requirements.</p>
+<p><u>Exit Criteria</u><strong>:</strong> RTM should be signed off and The customer should sign off on the test automation feasibility</p>
+<p><u>Deliverables</u><strong>: Requirement Traceability Matrix (RTM), Clarification Document, Automation feasibility report(Optional)</strong></p>
+<p><br></p>
+<p><strong>ii) Test Planning by : Test Lead or Test Manager.</strong></p>
+<p>&nbsp; &nbsp; Entry Criteria : &nbsp;RTM</p>
+<p>&nbsp; &nbsp; <strong>What Test Plan contains</strong>: (IEEE 829 STANDARD TEST PLAN TEMPLATE)</p>
+<ol>
+    <li>&nbsp; &nbsp;&nbsp;<ol>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ol>
+                    <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ol>
+                            <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+                            <li>
+                                <p>Test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; plan identifier</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; deliverables</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Introduction</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tasks</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Test &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; items</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Environmental &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; needs</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Features &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to be tested</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Responsibilities</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Features &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; not to be tested</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Staffing &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and training needs</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Approach &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Schedule &nbsp; &nbsp;</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Item &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass/fail criteria</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                            <li>
+                                <p>Risks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and contingencies</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            </li>
+                        </ol>
+                    </li>
+                    <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+                </ol>
+            </li>
+            <li>&nbsp; &nbsp;&nbsp;</li>
+        </ol>
+    </li>
+</ol>
+<p>Exit Criteria and Deliverables: &nbsp;<strong>Approved Test Plan with estimation, Test Strategy document.&nbsp;</strong></p>
+<p><br></p>
+<p><strong>iii) Test Design &amp; Development</strong></p>
+<p>&nbsp; &nbsp; Test Case Techniques:</p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;<ul>
+            <li>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<ul>
+                    <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+                    <li>
+                        <p>Equivalence &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; class Partition (ECP) &ndash; for condition (1 to 100) --&gt; 25</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <p>Boundary &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Value Analysis (BVA) --&gt;0,1 and 100,101</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <p>Decision &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; table based testing / cause-effect --&gt; table for cond &amp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; actions</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <p>State &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Transition &ndash; pwd locked after 3 attempts</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li>
+                        <p>Error &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guessing &ndash; test for w/wo valid/invalid inputs</p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    </li>
+                </ul>
+            </li>
+            <li>&nbsp; &nbsp;&nbsp;</li>
+        </ul>
+    </li>
+</ul>
+<p>&nbsp; &nbsp; Types of test cases</p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>Functional &nbsp; &nbsp; Test Cases</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Positive &nbsp; &nbsp; Test Cases</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Negative &nbsp; &nbsp; Test Cases</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Non &nbsp; &nbsp; Functional Test Cases &nbsp; &nbsp;&nbsp;</p>
+    </li>
+</ul>
+<p>&nbsp; &nbsp; Test Case Review: Reviewing is a form of testing too &ndash; the verification part of the V&amp;V, also called static testing.</p>
+<p><br></p>
+<p>&nbsp; &nbsp; <u><strong>Sample Test Case Template:</strong></u></p>
+<p>1) Test Case Id:</p>
+<p>2) Test Case Title:</p>
+<p>3) Module Id:</p>
+<p>4) Precondition:</p>
+<p>5) Test Steps:</p>
+<p>6) Test Data:</p>
+<p>7) Expected Result:</p>
+<p>8) Post-condition:</p>
+<p>9) Actual Results:</p>
+<p>10) Status: Pass or Fail</p>
+<ol start="11">
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>Comments: &nbsp; &nbsp; (Optional)</p>
+    </li>
+</ol>
+<p><br></p>
+<ol>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>Self-Review</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Peer &nbsp; &nbsp; Review: &nbsp;by colleague</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Lead &nbsp; &nbsp; Review: &nbsp;by our Test lead or Manager</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Client &nbsp; &nbsp; Review: by client or business team after lead review.</p>&nbsp; &nbsp;&nbsp;<p><br></p>
+    </li>
+</ol>
+<p>&nbsp; &nbsp; Entry: last 2 phase deliverable</p>
+<p>&nbsp; &nbsp; Exit Criteria &amp; Deliverables: <strong>Review prepare test scenarios, test cases/test scripts and test data</strong></p>
+<p><br></p>
+<p><strong>iv) Test Environment / Bed Setup</strong></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>configuration &nbsp; &nbsp; must mimic the production environment, Readiness of the test &nbsp; &nbsp; validate by smoke test &nbsp; &nbsp;</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Entry &nbsp; &nbsp; Criteria: System design document/s, Architectural document of the &nbsp; &nbsp; application and Environment set-up checklist. Provision of Test &nbsp; &nbsp; Plan, &nbsp;readiness of Smoke Test cases and preparation of test data.</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Exit &nbsp; &nbsp; criteria: Test environment should be ready and smoke testing should &nbsp; &nbsp; be &nbsp;performed successfully</p>
+    </li>
+</ul>
+<p><br></p>
+<p><strong>v) Test Execution</strong></p>
+<p>&nbsp; &nbsp; Entry Criteria: Test Plan document, Test cases, Test data, Test Environment</p>
+<p>&nbsp; &nbsp; Exit Criteria &amp; Deliverables: <strong>Test execution Report, Updated test cases with results, Completed RTM with execution status, Opened and Closed defect/Bug Report/s&nbsp;</strong></p>
+<p><br></p>
+<ol>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>Severity &nbsp; &nbsp; (imp/no imp): Blocker(Major flow/ feature), critical, major, medium, &nbsp; &nbsp; minor and Cosmetic (Related to the look) (unchangeable)</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>Priority &nbsp; &nbsp; (urgent / NU) : High , Medium, Low (may change by anyone w.r.t time)</p>
+    </li>
+</ol>
+<p><br></p>
+<p><strong>vi) Test Cycle Closure</strong></p>
+<p>&nbsp; &nbsp; Entry Criteria: Test case Execution report and Opened and closed Defect Reports</p>
+<p>&nbsp; &nbsp; Exit Criteria &amp; Deliverables: <strong>Test Closure Report signed off by client, Test Metrics</strong></p>
+<p><br></p>
+<p><strong>Famous Defect Tracking Tools</strong>:</p>
+<p>- Bugzilla</p>
+<p>- JIRA</p>
+<p>- ALM (QC)</p>
+<p>&nbsp;</p>
+<p><strong>A typical Defect Tracker will have:</strong></p>
+<p>- Defect id</p>
+<p>- Date</p>
+<p>- product version</p>
+<p>- Build version</p>
+<p>- Created By</p>
+<p>- Assigned TO</p>
+<p>- Bug description</p>
+<p>- Steps to Reproduce</p>
+<p>- Expected Result</p>
+<p>- Comments</p>
+<p>- Screen shots</p>
+<p>- Fixed by</p>
+<p>- Date closed</p>
+<p>- Severity</p>
+<p>- priority</p>
+<p><br></p>
+<p>Defect Life Cycle:&ldquo;Defect life cycle is a cycle which a defect goes through during its lifetime. &ldquo;</p>
+<p><br></p>
+<p><strong>The Life cycle of the bug / resolution types :</strong></p>
+<p> New.</p>
+<p> Assigned</p>
+<p> Open: developer working on it</p>
+<p> Fixed</p>
+<p> Pending retest</p>
+<p> Retest</p>
+<p> Verified</p>
+<p> Reopen</p>
+<p> Closed</p>
+<p> Duplicate</p>
+<p> Rejected</p>
+<p> Deferred</p>
+<p> Not a bug</p>
+<p><br></p>
+<p><strong>Bug rejected Reasons</strong></p>
+<ul>
+    <li>&nbsp; &nbsp;&nbsp;</li>
+    <li>
+        <p>enhancement</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>need &nbsp; &nbsp; more info</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>not &nbsp; &nbsp; reproducible</p>&nbsp; &nbsp;&nbsp;
+    </li>
+    <li>
+        <p>as &nbsp; &nbsp; designed</p>
+    </li>
+</ul>
+<p><br></p>
+<p><strong>Model Defect Report Template:</strong></p>
+<p>1) Defect Id: any unique name for Identifying the Defect (Alphanumeric)</p>
+<p>2) Defect Description: Details about the Defect</p>
+<p>3) Test Case Id: Corresponding Test Case Id for tracking</p>
+<p>4) Tester: Tester&rsquo;s name (who found the Defect)</p>
+<p>5) Product Version: Version of the Product on which defect was found</p>
+<p>6) Build Version: Version of the Build on which defect was found</p>
+<p>7) Priority: Importance of the Defect based on Business /Customer</p>
+<p>8) Severity: Importance of the Defect based on Functionality</p>
+<p>9) Status: Status of Defect</p>
+<p>10) Reproducible or not: Yes / No</p>
+<p>If Reproducible:</p>
+<p>Steps:</p>
+<p>If not Reproducible:</p>
+<p>Attachments</p>
+<p>11) Reporting to: Corresponding Developer</p>
+<p>12) Remarks : Comments (Optional)</p>
+<p>---------------------------------------------------------------------------------------------------------------------------
+<p align="CENTER"><u><strong>Test Metrics</strong></u></p>
+<p>Generation of Software Test Metrics is the most important responsibility of the Software Test Lead/Manager.</p>
+<p>&nbsp;</p>
+<p><strong>Effectiveness</strong>: Doing the right thing. It deals with meeting the desirable attributes that are expected by the customer.</p>
+<p><strong>Efficiency</strong>: Doing the thing right. It concerns the resources used for the service to be rendered</p>
+<p><br></p>
+<p>a. <strong>Test Plan coverage on Functionality:</strong></p>
+<p>(No of req covered / total # of req) * 100</p>
+<p>b. <strong>Test Case defect density:</strong></p>
+<p>(Defective # Test Scripts /Total # Test req Scripts) * 100</p>
+<p>c. <strong>Defect Slippage/rejection Ratio:</strong></p>
+<p># of Defects Slipped / (# of Defects Raised - # of Defects Withdrawn)</p>
+<p>d. <strong>Requirement Volatility:</strong></p>
+<p>(# of req Added + Deleted + Modified) *100 / # of Original req</p>
+<p>e. <strong>Review Efficiency:</strong></p>
+<p>100*Total # of defects found by reviews/Total # of project defects</p>
+<p>f. <strong>Defect Removal Effectiveness(DRE):</strong></p>
+<p>DRE= (Defects removed during development phase x100%) / Defects latent in the product</p>
+<p><br></p>
+<p>Defects latent in the product = Defects removed during development Phase+ defects found later by user</p>
+<p><br></p>
+<p>&nbsp;</p>
+<p><strong>When we get a job, we will be working on 3 types of projects,</strong></p>
+<p> <strong>Stand-alone application</strong> &ndash; installed in one computer</p>
+<p> <strong>Web Application</strong></p>
+<p> <strong>Client &ndash; Server application</strong> &ndash; installing both client and server software</p>
+<p><br></p>
+<p>QA / Testing Activities</p>
+<p><br></p>
+<p>7 principles of software testing</p>
+<p><br></p>
+<p><u><strong>Test Summary Report Template</strong></u></p>
+<p>Introduction:</p>
+<p>Test Items:</p>
+<p>Reference documents</p>
+<p>Target Audience</p>
+<p><strong>Test Summary</strong></p>
+<p><strong>a) Test Suite Information:</strong></p>
+<p>&bull; # of test suites planned.</p>
+<p>&bull; # and percentage of test suites implemented.</p>
+<p>&bull; # and percentage of test suites executed.</p>
+<p><strong>b) Test Case Information:</strong></p>
+<p>&bull; # of test cases planned.</p>
+<p>&bull; # and percentage of test cases implemented.</p>
+<p>&bull; # and percentage of test cases executed.</p>
+<p>&bull; # and percentage of test cases passed.</p>
+<p>&bull; # and percentage of test cases failed (total and by severity).</p>
+<p><strong>c) Defect Report Information</strong></p>
+<p># of defects found in comprehensive Testing</p>
+<p># of Test Cases selected for Regression Testing Cycle1</p>
+<p># of defects found in Regression Testing Cycle1</p>
+<p># of Test Cases selected for Regression Testing Cycle 2</p>
+<p># of defects found in Regression Testing Cycle 2</p>
+<p># of Test Cases selected for Regression Testing Cycle 3</p>
+<p># of defects found in Regression Testing Cycle 3</p>
+<p>.....</p>
+<p># of Test Cases selected for Final Regression.</p>
+<p># of opened defects in this release.</p>
+<p>Approvals</p>
+<p><br></p>
+<p><br></p>
+
+<p class="bborder"></p>
+ 
+</body>
+</html>
